@@ -28,3 +28,17 @@ venv
 
 # NodeJS
 node_modules
+# Allow committing specific development artifacts needed for tests and docs
+!development/IMPLEMENTATION_PLAN.md
+!development/_frappe_stub/
+
+# Re-include AIS app structure with explicit negations for tests and services
+!development/frappe-bench/
+!development/frappe-bench/apps/
+!development/frappe-bench/apps/ais/
+!development/frappe-bench/apps/ais/ais/
+!development/frappe-bench/apps/ais/ais/ais/
+!development/frappe-bench/apps/ais/ais/ais/tests/
+!development/frappe-bench/apps/ais/ais/ais/tests/*
+!development/frappe-bench/apps/ais/ais/ais/services/
+!development/frappe-bench/apps/ais/ais/ais/services/*

@@ -1,0 +1,65 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Employment Status",
+  "employment_status": "Casual",
+  "modified": "2024-02-26 13:32:54.712312",
+  "name": "Casual"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Employment Status",
+  "employment_status": "Contract of Service",
+  "modified": "2024-02-26 13:32:54.728532",
+  "name": "Contract of Service"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Employment Status",
+  "employment_status": "Contractual",
+  "modified": "2024-02-26 13:32:54.740374",
+  "name": "Contractual"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Employment Status",
+  "employment_status": "Part Time/Job Order",
+  "modified": "2024-02-26 13:32:54.756726",
+  "name": "Part Time/Job Order"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Employment Status",
+  "employment_status": "Substitute",
+  "modified": "2024-02-26 13:32:54.770255",
+  "name": "Substitute"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Employment Status",
+  "employment_status": "Temporary",
+  "modified": "2024-02-26 13:32:54.779519",
+  "name": "Temporary"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Employment Status",
+  "employment_status": "Unknown",
+  "modified": "2024-02-26 13:32:54.786355",
+  "name": "Unknown"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Employment Status",
+  "employment_status": "Coterminuos",
+  "modified": "2024-02-26 13:32:54.747064",
+  "name": "Coterminuos"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Employment Status",
+  "employment_status": "Permanent",
+  "modified": "2024-02-26 13:32:54.763458",
+  "name": "Permanent"
+ }
+]

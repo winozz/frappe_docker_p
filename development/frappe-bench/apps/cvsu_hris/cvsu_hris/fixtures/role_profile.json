@@ -1,0 +1,98 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-01-23 10:38:43.929844",
+  "name": "CvSU Employee Role Profile",
+  "role_profile": "CvSU Employee Role Profile",
+  "roles": [
+   {
+    "parent": "CvSU Employee Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Employee Self Service"
+   },
+   {
+    "parent": "CvSU Employee Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Employee"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2025-04-07 15:16:26.208500",
+  "name": "CvSU Stock and Asset Role Profile",
+  "role_profile": "CvSU Stock and Asset Role Profile",
+  "roles": [
+   {
+    "parent": "CvSU Stock and Asset Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Quality Manager"
+   },
+   {
+    "parent": "CvSU Stock and Asset Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "CvSU Stock and Asset Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2025-04-23 08:31:45.573443",
+  "name": "CvSU Accounting Role Profile",
+  "role_profile": "CvSU Accounting Role Profile",
+  "roles": [
+   {
+    "parent": "CvSU Accounting Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "CvSU Accounting Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Accounts User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2025-12-02 13:54:34.049808",
+  "name": "CvSU WFH Employee Role Profile",
+  "role_profile": "CvSU WFH Employee Role Profile",
+  "roles": [
+   {
+    "parent": "CvSU WFH Employee Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Employee"
+   },
+   {
+    "parent": "CvSU WFH Employee Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Employee Self Service"
+   },
+   {
+    "parent": "CvSU WFH Employee Role Profile",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "WFH User"
+   }
+  ]
+ }
+]

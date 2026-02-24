@@ -1,0 +1,18 @@
+{
+  "name": "cvsu_hris",
+  "version": "1.0.0",
+  "description": "CvSU HRIS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cavite-State-University-Official/hris.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alpinejs": "^3.13.7",
+    "jquery": "^3.7.1"
+  }
+}

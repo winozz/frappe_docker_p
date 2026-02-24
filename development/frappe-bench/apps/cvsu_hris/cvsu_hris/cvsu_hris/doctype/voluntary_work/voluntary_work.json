@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-19 08:24:24.798920",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "voluntary_work_organization_name",
+  "voluntary_work_organization_address",
+  "voluntary_work_inclusive_dates_from",
+  "voluntary_work_inclusive_dates_to",
+  "voluntary_work_number_hours",
+  "voluntary_work_position"
+ ],
+ "fields": [
+  {
+   "fieldname": "voluntary_work_organization_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Organization (Write in full)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voluntary_work_organization_address",
+   "fieldtype": "Data",
+   "label": "Address of Organization (Write in full)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voluntary_work_inclusive_dates_from",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Inclusive Dates (From)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voluntary_work_inclusive_dates_to",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Inclusive Dates (To)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voluntary_work_number_hours",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Hours",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voluntary_work_position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position/Nature of Work",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-03 11:32:12.841391",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "Voluntary Work",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

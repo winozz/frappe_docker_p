@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-18 16:55:37.219787",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "civil_service_eligibility_license",
+  "civil_service_rating",
+  "civil_service_date_examination",
+  "civil_service_place_examination",
+  "civil_service_license_number",
+  "civil_service_license_date_validity"
+ ],
+ "fields": [
+  {
+   "fieldname": "civil_service_eligibility_license",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Career Service/RA  1080 (Board/Bar) Under Special Laws/CES/CSEE Barangay Eligibility/Driver's License",
+   "reqd": 1
+  },
+  {
+   "fieldname": "civil_service_rating",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rating (if applicable)"
+  },
+  {
+   "fieldname": "civil_service_date_examination",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Examination/Conferment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "civil_service_place_examination",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Place of Examination/Conferment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "civil_service_license_date_validity",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "License Date of Validity (if applicable)"
+  },
+  {
+   "fieldname": "civil_service_license_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "License Number  (if applicable)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-03 11:16:55.559287",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "Civil Service Eligibility",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,86 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 10:41:03.143496",
+  "name": "Ms",
+  "salutation": "Ms"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 10:41:03.144973",
+  "name": "Mx",
+  "salutation": "Mx"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 10:41:03.147090",
+  "name": "Dr",
+  "salutation": "Dr"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 10:41:03.149041",
+  "name": "Mrs",
+  "salutation": "Mrs"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 10:41:03.150611",
+  "name": "Madam",
+  "salutation": "Madam"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 10:41:03.151973",
+  "name": "Miss",
+  "salutation": "Miss"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 10:41:03.153347",
+  "name": "Master",
+  "salutation": "Master"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 10:41:03.154659",
+  "name": "Prof",
+  "salutation": "Prof"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 13:35:42.789016",
+  "name": "Engr",
+  "salutation": "Engr"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 13:35:51.248021",
+  "name": "Arch",
+  "salutation": "Arch"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-05-02 16:58:39.147866",
+  "name": "Atty",
+  "salutation": "Atty"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Salutation",
+  "modified": "2024-02-26 10:41:03.138734",
+  "name": "Mr",
+  "salutation": "Mr"
+ }
+]

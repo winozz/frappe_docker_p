@@ -1,0 +1,402 @@
+<div class="worksheet" data-fit-width="true" data-fit-height="true">
+	<div id="WS-C4" class="content">
+		<table id="T-C4">
+			<thead>
+				<tr>
+					<th class="H-1"></th>
+					<th class="H-2"></th>
+					<th class="H-3"></th>
+					<th class="H-4"></th>
+					<th class="H-5"></th>
+					<th class="H-6"></th>
+					<th class="H-7"></th>
+					<th class="H-8"></th>
+					<th class="H-9"></th>
+					<th class="H-10"></th>
+					<th class="H-11"></th>
+					<th class="H-12"></th>
+					<th class="H-13"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="R-1">
+					<td class="C-1" colspan="13"></td>
+				</tr>
+				<tr class="R-2">
+					<td class="C-1" colspan="2" rowspan="11">34.</td>
+					<td class="C-3" colspan="4">Are you related by consanguinity or affinity to the appointing or recommending authority, or to </td>
+					<td class="C-7" colspan="7" rowspan="4"></td>
+				</tr>
+				<tr class="R-3">
+					<td class="C-3" colspan="4">the chief of bureau or office or to the person who has immediate supervision over you in the </td>
+				</tr>
+				<tr class="R-4">
+					<td class="C-3" colspan="4">Office, Bureau or Department where you will be apppointed,</td>
+				</tr>
+				<tr class="R-5">
+					<td class="C-3" colspan="4"></td>
+				</tr>
+				<tr class="R-6">
+					<td class="C-3" colspan="4">a. within the third degree?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_within_third_degree=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_within_third_degree=='No')}}</td>
+				</tr>
+				<tr class="R-7">
+					<td class="C-3" colspan="4"></td>
+					<td class="C-7"></td>
+					<td class="C-8"></td>
+					<td class="C-9"></td>
+					<td class="C-10"></td>
+					<td class="C-11"></td>
+					<td class="C-12"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-8">
+					<td class="C-3" colspan="4">b. within the fourth degree (for Local Government Unit - Career Employees)?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_within_fourth_degree=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_within_fourth_degree=='No')}}</td>
+				</tr>
+				<tr class="R-9">
+					<td class="C-3" colspan="4" rowspan="4"></td>
+					<td class="C-7"></td>
+					<td class="C-8"></td>
+					<td class="C-9"></td>
+					<td class="C-10"></td>
+					<td class="C-11"></td>
+					<td class="C-12"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-10">
+					<td class="C-7" colspan="6">      If YES, give details:</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-11">
+					<td class="C-7"></td>
+					<td class="C-8 c-value" colspan="5">{{ doc.custom_relation_details | default('n/a', true) | upper}}</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-12">
+					<td class="C-7" colspan="7"></td>
+				</tr>
+				<tr class="R-13">
+					<td class="C-1" colspan="2" rowspan="10">35.</td>
+					<td class="C-3" colspan="4" rowspan="4">a. Have you ever been found guilty of any administrative offense?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_guilty_admin_offense=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_guilty_admin_offense=='No')}}</td>
+				</tr>
+				<tr class="R-14">
+					<td class="C-7" colspan="6">      If YES, give details:</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-15">
+					<td class="C-7"></td>
+					<td class="C-8 c-value" colspan="5">{{ doc.custom_admin_offense_details | default('n/a', true) | upper}}</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-16">
+					<td class="C-7"></td>
+					<td class="C-8"></td>
+					<td class="C-9"></td>
+					<td class="C-10"></td>
+					<td class="C-11"></td>
+					<td class="C-12"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-17">
+					<td class="C-3" colspan="4"></td>
+					<td class="C-7" colspan="7"></td>
+				</tr>
+				<tr class="R-18">
+					<td class="C-3" colspan="4" rowspan="5">b. Have you been criminally charged before any court?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_criminally_charged=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_criminally_charged=='No')}}</td>
+				</tr>
+				<tr class="R-19">
+					<td class="C-7" colspan="6">      If YES, give details:</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-20">
+					<td class="C-7"></td>
+					<td class="C-8" colspan="2">Date Filed:</td>
+					<td class="C-10"></td>
+					<td class="C-11 c-value" colspan="2">{{ frappe.utils.get_datetime(doc.custom_criminal_charge_date_filed).strftime('%m/%d/%Y') if doc.custom_criminal_charge_date_filed else 'N/A' }}</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-21">
+					<td class="C-7" colspan="3">Status of Case/s:</td>
+					<td class="C-10"></td>
+					<td class="C-11 c-value" colspan="2">{{ doc.custom_criminal_charge_status | default('n/a', true) | upper}}</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-22">
+					<td class="C-7"></td>
+					<td class="C-8"></td>
+					<td class="C-9"></td>
+					<td class="C-10"></td>
+					<td class="C-11"></td>
+					<td class="C-12"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-23">
+					<td class="C-1" colspan="2" rowspan="4">36.</td>
+					<td class="C-3" colspan="4" rowspan="4">Have you ever been convicted of any crime or violation of any law, decree, ordinance or regulation by any court or tribunal?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_convicted=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_convicted=='No')}}</td>
+				</tr>
+				<tr class="R-24">
+					<td class="C-7" colspan="6">      If YES, give details:</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-25">
+					<td class="C-7"></td>
+					<td class="C-8 c-value" colspan="5">{{ doc.custom_conviction_details | default('n/a', true) | upper}}</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-26">
+					<td class="C-7" colspan="7"></td>
+				</tr>
+				<tr class="R-27">
+					<td class="C-1" colspan="2" rowspan="4">37.</td>
+					<td class="C-3" colspan="4" rowspan="4">Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination, end of term, finished contract or phased out (abolition) in the public or private sector?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_separated=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_separated=='No')}}</td>
+				</tr>
+				<tr class="R-28">
+					<td class="C-7" colspan="6">      If YES, give details:</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-29">
+					<td class="C-7"></td>
+					<td class="C-8 c-value" colspan="5">{{ doc.custom_separation_details | default('n/a', true) | upper}}</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-30">
+					<td class="C-7" colspan="7"></td>
+				</tr>
+				<tr class="R-31">
+					<td class="C-1" colspan="2" rowspan="6">38.</td>
+					<td class="C-3" colspan="4" rowspan="2">a. Have you ever been a candidate in a national or local election held within the last year (except Barangay election)?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_candidate=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_candidate=='No')}}</td>
+				</tr>
+				<tr class="R-32">
+					<td class="C-7" colspan="4">If YES, give details:</td>
+					<td class="C-11 c-value" colspan="2">{{ doc.custom_candidacy_details | default('n/a', true) | upper}}</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-33">
+					<td class="C-3" colspan="4"></td>
+					<td class="C-7"></td>
+					<td class="C-8"></td>
+					<td class="C-9"></td>
+					<td class="C-10"></td>
+					<td class="C-11"></td>
+					<td class="C-12"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-34">
+					<td class="C-3" colspan="4" rowspan="3">b. Have you resigned from the government service during the three (3)-month period before the last election to promote/actively campaign for a national or local candidate?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_campaigning=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_campaigning=='No')}}</td>
+				</tr>
+				<tr class="R-35">
+					<td class="C-7" colspan="4">If YES, give details:</td>
+					<td class="C-11 c-value" colspan="2">{{ doc.custom_campaigning_details | default('n/a', true) | upper}}</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-36">
+					<td class="C-7"></td>
+					<td class="C-8"></td>
+					<td class="C-9"></td>
+					<td class="C-10"></td>
+					<td class="C-11"></td>
+					<td class="C-12"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-37">
+					<td class="C-1" colspan="2" rowspan="4">39.</td>
+					<td class="C-3" colspan="4" rowspan="4">Have you acquired the status of an immigrant or permanent resident of another country?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_immigrant=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_immigrant=='No')}}</td>
+				</tr>
+				<tr class="R-38">
+					<td class="C-7" colspan="7">      If YES, give details (country):</td>
+				</tr>
+				<tr class="R-39">
+					<td class="C-7"></td>
+					<td class="C-8 c-value" colspan="5">{{ doc.custom_immigrant_country | default('n/a', true) | upper}}</td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-40">
+					<td class="C-7"></td>
+					<td class="C-8"></td>
+					<td class="C-9" colspan="4"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-41">
+					<td class="C-1" colspan="2" rowspan="2">40.</td>
+					<td class="C-3" colspan="4" rowspan="2">Pursuant to: (a) Indigenous People's Act (RA 8371); (b) Magna Carta for Disabled Persons (RA 7277); and (c) Solo Parents Welfare Act of 2000 (RA 8972), please answer the following items:</td>
+					<td class="C-7" colspan="7" rowspan="2"></td>
+				</tr>
+				<tr class="R-42">
+				</tr>
+				<tr class="R-43">
+					<td class="C-1" colspan="2" rowspan="2">a.</td>
+					<td class="C-3" colspan="4" rowspan="2">Are you a member of any indigenous group?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',doc.custom_is_indigenous=='Yes')}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',doc.custom_is_indigenous=='No')}}</td>
+				</tr>
+				<tr class="R-44">
+					<td class="C-7" colspan="5">If YES, please specify:</td>
+					<td class="C-12 c-value">{{ doc.custom_indigenous_details | default('n/a', true) | upper}}</td>
+					<td class="C-13"></td>
+				</tr>
+				{% set pwd_id=frappe.get_all("ID", filters={"parent": doc.name, "parenttype": "Employee", "id_selected_type": "PWD"}, fields=["id_number"]) | list %}
+				<tr class="R-45">
+					<td class="C-1" colspan="2" rowspan="2">b.</td>
+					<td class="C-3" colspan="4" rowspan="2">Are you a person with disability?</td>
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',(pwd_id|length)>0)}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',(pwd_id|length)==0)}}</td>
+				</tr>
+				<tr class="R-46">
+					<td class="C-7" colspan="5">If YES, please specify ID No:</td>
+					<td class="C-12 c-value"></td>
+					<td class="C-13"></td>
+				</tr>
+				{% set solo_parent_id=frappe.get_all("ID", filters={"parent": doc.name, "parenttype": "Employee", "id_selected_type": "SOLO PARENT"}, fields=["id_number"]) | list %}
+				<tr class="R-47">
+					<td class="C-1" colspan="2" rowspan="3">c.</td>
+					<td class="C-3" colspan="4" rowspan="3">Are you a solo parent?</td>					
+					<td class="C-7 c-value" colspan="3">{{show_checkbox('YES',(solo_parent_id|length)>0)}}</td>
+					<td class="C-10" colspan="4">{{show_checkbox('NO',(solo_parent_id|length)==0)}}</td>
+				</tr>
+				<tr class="R-48">
+					<td class="C-7" colspan="5">If YES, please specify ID No:</td>
+					<td class="C-12 c-value"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-49">
+					<td class="C-7" colspan="7"></td>
+				</tr>
+				<tr class="R-50">
+					<td class="C-1" colspan="2">41.</td>
+					<td class="C-3" colspan="7">REFERENCES <b>(Person not related by consanguinity or affinity to applicant /appointee)<b></td>
+					<td class="C-10" colspan="4" rowspan="6">
+						<img id="id-placeholder" src="assets/cvsu_hris/images/pds/ID Place Holder_new.jpg">
+					</td>
+				</tr>
+				<tr class="R-51">
+					<td class="C-1" colspan="5">NAME</td>
+					<td class="C-6">OFFICE / RESIDENTIAL ADDRESS</td>
+					<td class="C-7" colspan="3">CONTACT NO. AND/OR EMAIL</td>
+				</tr>
+				<tr class="R-52">
+					<td class="C-1" colspan="5"></td>
+					<td class="C-6"></td>
+					<td class="C-7" colspan="3"></td>
+				</tr>
+				<tr class="R-53">
+					<td class="C-1" colspan="5"></td>
+					<td class="C-6"></td>
+					<td class="C-7" colspan="3"></td>
+				</tr>
+				<tr class="R-54">
+					<td class="C-1" colspan="5"></td>
+					<td class="C-6"></td>
+					<td class="C-7" colspan="3"></td>
+				</tr>
+				<tr class="R-55">
+					<td class="C-1" colspan="2" rowspan="4">42.</td>
+					<td class="C-3" colspan="7" rowspan="4">I declare under oath that I have personally accomplished this Personal Data Sheet which is a true, correct and complete statement pursuant to the provisions of pertinent laws, rules and regulations of the Republic of the Philippines. I authorize the agency head/authorized representative to verify/validate the contents stated herein. I  agree that any misrepresentation made in this document and its attachments shall cause the filing of administrative/criminal case/s against me.</td>
+				</tr>
+				<tr class="R-56">
+					<td class="C-10" colspan="4">PHOTO</td>
+				</tr>
+				<tr class="R-57">
+					<td class="C-10" colspan="4"></td>
+				</tr>
+				<tr class="R-58">
+					<td class="C-10" rowspan="8"></td>
+					<td class="C-11" colspan="2" rowspan="7"></td>
+					<td class="C-13" rowspan="8"></td>
+				</tr>
+				<tr class="R-59">
+					<td class="C-1" colspan="9"></td>
+				</tr>
+				<tr class="R-60">
+					<td class="C-1" rowspan="7"></td>
+					<td class="C-2" colspan="3">Government Issued ID (i.e.Passport, GSIS, SSS, PRC, Driver's License, etc.)                                                        <i>PLEASE INDICATE ID Number and Date of Issuance<i></td>
+					<td class="C-5" rowspan="6"></td>
+					<td class="C-6" colspan="4" rowspan="3"></td>
+				</tr>
+				<tr class="R-61">
+					<td class="C-2" colspan="2">Government Issued ID:</td>
+					<td class="C-4 c-value"></td>
+				</tr>
+				<tr class="R-62">
+					<td class="C-2" colspan="2" rowspan="2">ID/License/Passport No.:</td>
+					<td class="C-4 c-value" rowspan="2"></td>
+				</tr>
+				<tr class="R-63">
+					<td class="C-6" colspan="4">Signature (Sign inside the box)</td>
+				</tr>
+				<tr class="R-64">
+					<td class="C-2" colspan="2" rowspan="2">Date/Place of Issuance:</td>
+					<td class="C-4 c-value" rowspan="2"></td>
+					<!--<td class="C-6" colspan="4"><strong>{{frappe.utils.get_datetime(frappe.utils.nowdate()).strftime('%m/%d/%Y')}}</strong></td>-->
+					<td class="C-6" colspan="4"></td>
+				</tr>
+				<tr class="R-65">
+					<td class="C-6" colspan="4">Date Accomplished</td>
+					<td class="C-11" colspan="2">Right Thumbmark</td>
+				</tr>
+				<tr class="R-66">
+					<td class="C-2" colspan="12"></td>
+				</tr>
+				<tr class="R-67">
+					<td class="C-1" colspan="13">SUBSCRIBED AND SWORN to before me this  <u>                                                                      </u>, affiant exhibiting his/her validly issued government ID as indicated above.</td>
+				</tr>
+				<tr class="R-68">
+					<td class="C-1"></td>
+					<td class="C-2"></td>
+					<td class="C-3"></td>
+					<td class="C-4"></td>
+					<td class="C-5" colspan="5"></td>
+					<td class="C-10"></td>
+					<td class="C-11"></td>
+					<td class="C-12"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-69">
+					<td class="C-1"></td>
+					<td class="C-2"></td>
+					<td class="C-3"></td>
+					<td class="C-4"></td>
+					<td class="C-5" colspan="5">Person Administering Oath</td>
+					<td class="C-10"></td>
+					<td class="C-11"></td>
+					<td class="C-12"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-70">
+					<td class="C-1"></td>
+					<td class="C-2"></td>
+					<td class="C-3"></td>
+					<td class="C-4"></td>
+					<td class="C-5"></td>
+					<td class="C-6"></td>
+					<td class="C-7"></td>
+					<td class="C-8"></td>
+					<td class="C-9"></td>
+					<td class="C-10"></td>
+					<td class="C-11"></td>
+					<td class="C-12"></td>
+					<td class="C-13"></td>
+				</tr>
+				<tr class="R-71">
+					<td class="C-1" colspan="13">CS FORM 212 (Revised 2025),  Page 4 of 4</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

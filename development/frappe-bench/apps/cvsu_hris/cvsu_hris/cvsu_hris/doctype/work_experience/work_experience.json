@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-18 17:33:27.363785",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "work_experience_inclusive_dates_from",
+  "work_experience_inclusive_dates_to",
+  "work_experience_position_title",
+  "work_experience_company",
+  "work_experience_monthly_salary",
+  "work_experience_pay_grade",
+  "work_experience_status_appointment",
+  "work_experience_government_service"
+ ],
+ "fields": [
+  {
+   "fieldname": "work_experience_inclusive_dates_from",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Inclusive Dates (From)"
+  },
+  {
+   "fieldname": "work_experience_inclusive_dates_to",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Inclusive Dates (To)"
+  },
+  {
+   "fieldname": "work_experience_position_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Position Title (Write in full/Do not abbreviate)"
+  },
+  {
+   "fieldname": "work_experience_company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department/Agency/Office/Company (Write in full/Do not abbreviate)"
+  },
+  {
+   "fieldname": "work_experience_monthly_salary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Monthly Salary"
+  },
+  {
+   "fieldname": "work_experience_pay_grade",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Salary/Job/Pay Grade (if applicable) & Step (Format \"00-0\")/Increment"
+  },
+  {
+   "fieldname": "work_experience_status_appointment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status of Appointment"
+  },
+  {
+   "fieldname": "work_experience_government_service",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Government Service (Y/N)",
+   "options": "\nY\nN"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-16 14:16:34.959502",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "Work Experience",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

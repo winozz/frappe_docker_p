@@ -1,0 +1,282 @@
+{# <!--PDS Page 1--> #}
+{# <!--umid id--> #}
+{% set umid_id=frappe.get_all("ID", filters={"parent": doc.employee, "parenttype": "Employee", "id_selected_type": "UMID"}, fields=["id_number"]) | list %}
+
+{# <!--pag-ibig id--> #}
+{% set pagibig_id=frappe.get_all("ID", filters={"parent": doc.employee, "parenttype": "Employee", "id_selected_type": "PAG-IBIG"}, fields=["id_number"]) | list %}
+
+{# <!--philhealth id--> #}
+{% set philhealth_id=frappe.get_all("ID", filters={"parent": doc.employee, "parenttype": "Employee", "id_selected_type": "PHILHEALTH"}, fields=["id_number"]) | list %}
+
+{# <!--philsys id--> #}
+{% set philsys_id=frappe.get_all("ID", filters={"parent": doc.employee, "parenttype": "Employee", "id_selected_type": "PHILSYS"}, fields=["id_number"]) | list %}
+
+{# <!--tin id--> #}
+{% set tin_id=frappe.get_all("ID", filters={"parent": doc.employee, "parenttype": "Employee", "id_selected_type": "TIN"}, fields=["id_number"]) | list %}
+
+{# <!--spouse--> #}
+{% set spouse=frappe.get_all("Family Background", filters={"parent": doc.employee, "parenttype": "Employee", "relationship": "Spouse"}, fields=["first_name","surname","middle_name","name_extension","occupation","employers_business_name","employers_business_address","telephone_number"]) | list %}
+
+{# <!--father--> #}
+{% set father=frappe.get_all("Family Background", filters={"parent": doc.employee, "parenttype": "Employee", "relationship": "Father"}, fields=["first_name","surname","middle_name","name_extension"]) | list %}
+
+{# <!--mother--> #}
+{% set mother=frappe.get_all("Family Background", filters={"parent": doc.employee, "parenttype": "Employee", "relationship": "Mother"}, fields=["first_name","surname","middle_name","name_extension"]) | list %}
+
+{# <!--children--> #}
+{% set children=frappe.get_all("Family Background", filters={"parent": doc.employee, "parenttype": "Employee", "relationship": "Children"}, fields=["first_name","surname","middle_name","name_extension"]) | list %}
+{% set children_extra=frappe.get_all("Family Background", filters={"parent": doc.employee, "parenttype": "Employee", "relationship": "Children"}, fields=["date_of_birth"]) | list %}
+
+{# <!--elementary--> #}
+{% set elementary=frappe.get_all("Employee Education", filters={"parent": doc.employee, "parenttype": "Employee","custom_education_level" : "Elementary"}, fields=["custom_education_level","custom_education_is_completed","custom_education_school_university","custom_education_degree_course","custom_education_period_of_attendance_from", "custom_education_period_of_attendance_to", "custom_education_units_earned","custom_education_scholarship_academic_honors_received"]) | list | sort(attribute='custom_education_period_of_attendance_to', reverse = True) | sort(attribute='custom_education_period_of_attendance_from', reverse = True) %}
+
+{# <!--secondary--> #}
+{% set secondary=frappe.get_all("Employee Education", filters={"parent": doc.employee, "parenttype": "Employee","custom_education_level" : "Secondary"}, fields=["custom_education_level","custom_education_is_completed","custom_education_school_university","custom_education_degree_course","custom_education_period_of_attendance_from", "custom_education_period_of_attendance_to", "custom_education_units_earned","custom_education_scholarship_academic_honors_received"]) | list | sort(attribute='custom_education_period_of_attendance_to', reverse = True) | sort(attribute='custom_education_period_of_attendance_from', reverse = True) %}
+
+{# <!--vocational--> #}
+{% set vocational=frappe.get_all("Employee Education", filters={"parent": doc.employee, "parenttype": "Employee","custom_education_level" : "Vocational/Trade Course"}, fields=["custom_education_level","custom_education_is_completed","custom_education_school_university","custom_education_degree_course","custom_education_period_of_attendance_from", "custom_education_period_of_attendance_to", "custom_education_units_earned","custom_education_scholarship_academic_honors_received"]) | list | sort(attribute='custom_education_period_of_attendance_to', reverse = True) | sort(attribute='custom_education_period_of_attendance_from', reverse = True) %}
+
+{# <!--college--> #}
+{% set college=frappe.get_all("Employee Education", filters={"parent": doc.employee, "parenttype": "Employee","custom_education_level" : "College"}, fields=["custom_education_level","custom_education_is_completed","custom_education_school_university","custom_education_degree_course","custom_education_period_of_attendance_from", "custom_education_period_of_attendance_to", "custom_education_units_earned","custom_education_scholarship_academic_honors_received"]) | list | sort(attribute='custom_education_period_of_attendance_to', reverse = True) | sort(attribute='custom_education_period_of_attendance_from', reverse = True) %}
+
+{# <!--graduate studies--> #}
+{% set graduate_studies=frappe.get_all("Employee Education", filters={"parent": doc.employee, "parenttype": "Employee","custom_education_level" : "Graduate Studies"}, fields=["custom_education_level","custom_education_is_completed","custom_education_school_university","custom_education_degree_course","custom_education_period_of_attendance_from", "custom_education_period_of_attendance_to", "custom_education_units_earned","custom_education_scholarship_academic_honors_received"]) | list | sort(attribute='custom_education_period_of_attendance_to', reverse = True) | sort(attribute='custom_education_period_of_attendance_from', reverse = True) %}
+
+{# <!--PDS Page 2--> #}
+{# <!--civil service eligibility--> #}
+{% set civil_service_eligibilities=frappe.get_all("Civil Service Eligibility", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["civil_service_eligibility_license","civil_service_rating","civil_service_place_examination","civil_service_license_number"]) | list %}
+{% set civil_service_eligibilities_extra=frappe.get_all("Civil Service Eligibility", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["civil_service_date_examination","civil_service_license_date_validity"]) | list %}
+    
+{# <!--work experience--> #}
+{# <!--Company Name for Internal Work Experience--> #}
+{% set company_name=frappe.get_all("Employee", filters={"employee": doc.employee}, fields=["company"]) | list %}
+
+{% set internal_work_experiences=frappe.get_all("Employee Internal Work History", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["custom_is_present_work","custom_iw_position","branch","custom_iw_office","custom_iw_unit","custom_monthly_salary","custom_hourly_salary","custom_iw_pay_grade","custom_iw_status_appointment"]) | list %}
+{% set internal_work_experiences_extra=frappe.get_all("Employee Internal Work History", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["from_date","to_date"]) | list %}
+
+{% set external_work_experiences=frappe.get_all("Employee External Work History", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["company_name","custom_is_government_service","custom_ew_position","custom_ew_branch","custom_ew_office","custom_ew_unit","custom_monthly_salary","custom_ew_pay_grade","custom_ew_status_appointment"]) | list %}
+{% set external_work_experiences_extra=frappe.get_all("Employee External Work History", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["custom_ew_from_date","custom_ew_to_date"]) | list %}
+
+{# <!--PDS Page 3--> #}
+{# <!--voluntary work or involvement in civic / non-government / people / voluntary organizations--> #}
+{% set voluntary_works=frappe.get_all("Voluntary Work", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["voluntary_work_organization_name","voluntary_work_organization_address","voluntary_work_number_hours","voluntary_work_position"]) | list %}
+{% set voluntary_works_extra=frappe.get_all("Voluntary Work", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["voluntary_work_inclusive_dates_from","voluntary_work_inclusive_dates_to"]) | list %}
+
+{# <!--learning and development interventions / training programs attended--> #}
+{% set trainings=frappe.get_all("Training Programs Attended", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["training_program_title","training_program_number_hours","training_program_ld_type","training_program_sponsored_by"]) | list %}
+{% set trainings_extra=frappe.get_all("Training Programs Attended", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["training_program_inclusive_dates_attendance_from","training_program_inclusive_dates_attendance_to"]) | list %}
+
+{# <!--skills and hobbies--> #}
+{% set skills_hobbies=frappe.get_all("Special Skills and Hobbies", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["special_skills_and_hobbies"]) | list | sort(attribute='special_skills_and_hobbies')%}
+
+{# <!--non academic distinctions or recognition--> #}
+{% set non_academic_distinctions=frappe.get_all("Non Academic Distinctions or Recognition", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["other_information_non_academic_distinctions_recognition"]) | list | sort(attribute='other_information_non_academic_distinctions_recognition')%}
+
+{# <!--membership in association or organization--> #}
+{% set memberships=frappe.get_all("Membership in Association or Organization", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["other_information_membership_association_organization"]) | list | sort(attribute='other_information_membership_association_organization')%}
+
+{# <!--PDS Page 4--> #}
+{# <!--pwd id--> #}
+{% set pwd_id=frappe.get_all("ID", filters={"parent": doc.employee, "parenttype": "Employee", "id_selected_type": "PWD"}, fields=["id_number"]) | list %}
+
+{# <!--solo parent id--> #}
+{% set solo_parent_id=frappe.get_all("ID", filters={"parent": doc.employee, "parenttype": "Employee", "id_selected_type": "SOLO PARENT"}, fields=["id_number"]) | list %}
+
+{# <!--primary id--> #}
+{% set primary_id=frappe.get_all("ID", filters={"parent": doc.employee, "parenttype": "Employee", "id_is_primary": "1"}, fields=["id_number","id_selected_type","id_place"]) | list %}
+{% set primary_id_extra=frappe.get_all("ID", filters={"parent": doc.employee, "parenttype": "Employee", "id_is_primary": "1"}, fields=["id_date","id_other_type","id_selected_type"]) | list %}
+
+{# <!--references--> #}
+{% set references=frappe.get_all("References", filters={"parent": doc.employee, "parenttype": "Employee"}, fields=["references_name","references_address","references_telephone_number"]) | list | sort(attribute='references_name')%}
+
+{# <!--HR director/OIC --> #}
+{% set hr_director=frappe.get_all("Employee", filters={"designation": "DIRECTOR (Human Resource Development Office)"}, fields=["first_name","middle_name","last_name","custom_name_extension","designation"]) | list %}
+{% set hr_oic=frappe.get_all("Employee", filters={"designation": "OIC (Human Resource Development Office)"}, fields=["first_name","middle_name","last_name","custom_name_extension","designation"]) | list %}
+{% set hr_director_post_nominal_title=frappe.get_all("Employee", filters={"designation": "DIRECTOR (Human Resource Development Office)"}, fields=["custom_preferred_post_nominal_titles"]) | list %}
+{% set hr_oic_post_nominal_title=frappe.get_all("Employee", filters={"designation": "OIC (Human Resource Development Office)"}, fields=["custom_preferred_post_nominal_titles"]) | list %}
+
+<script type="text/javascript">
+    //PDS Page 1
+    let umid_id = {{ umid_id|safe }}[0]
+    let pagibig_id = {{ pagibig_id|safe }}[0]
+    let philhealth_id = {{ philhealth_id|safe }}[0]
+    let philsys_id = {{ philsys_id|safe }}[0]
+    let tin_id = {{ tin_id|safe }}[0]
+    let spouse = JSON.parse('{{ spouse|tojson }}')[0]
+    let father = JSON.parse('{{ father|tojson }}')[0]
+    let mother = JSON.parse('{{ mother|tojson }}')[0]
+    let children = JSON.parse('{{ children|tojson }}')
+    {%- set children_dates = [] -%}
+    {% for t in range(children|length) %}
+        {%- set date_of_birth = frappe.utils.get_datetime(children_extra[t].date_of_birth).strftime('%m/%d/%Y') -%}
+        {%- set _ = children_dates.append([date_of_birth]) -%}
+    {% endfor %}
+    let children_dates = {{ children_dates | safe}}
+    children_dates.forEach((dates, indx) => {
+        children[indx].date_of_birth = dates[0]; 
+    })
+    children.sort((a,b) => Date.parse(a.date_of_birth) - Date.parse(b.date_of_birth))
+    let elementary = JSON.parse('{{ elementary|tojson }}')
+    let secondary = JSON.parse('{{ secondary|tojson }}')
+    let vocational = JSON.parse('{{ vocational|tojson }}')
+    let college = JSON.parse('{{ college|tojson }}')
+    let graduate_studies = JSON.parse('{{ graduate_studies|tojson }}')
+    
+    //PDS Page 2
+    let civil_service_eligibilities = JSON.parse('{{ civil_service_eligibilities|tojson }}')
+    {%- set civil_service_eligibilities_dates = [] -%}
+    {% for t in range(civil_service_eligibilities|length) %}
+        {%- set civil_service_eligibilities_date_examination = frappe.utils.get_datetime(civil_service_eligibilities_extra[t].civil_service_date_examination).strftime('%m/%d/%Y') -%}
+        {%- set civil_service_eligibilities_license_date_validity = frappe.utils.get_datetime(civil_service_eligibilities_extra[t].civil_service_license_date_validity).strftime('%m/%d/%Y') if civil_service_eligibilities_extra[t].civil_service_license_date_validity else 'N/A' -%}
+        {%- set _ = civil_service_eligibilities_dates.append([civil_service_eligibilities_date_examination, civil_service_eligibilities_license_date_validity]) -%}
+    {% endfor %}
+    let civil_service_eligibilities_dates = {{ civil_service_eligibilities_dates | safe}}
+
+    civil_service_eligibilities_dates.forEach((dates, indx) => {
+        civil_service_eligibilities[indx].civil_service_date_examination = dates[0]; 
+        civil_service_eligibilities[indx].civil_service_license_date_validity = dates[1]; 
+    })
+    civil_service_eligibilities.sort((a,b) => Date.parse(b.civil_service_date_examination) - Date.parse(a.civil_service_date_examination))
+    
+    let company_name = JSON.parse('{{ company_name|tojson }}')[0]
+    let internal_work_experiences = JSON.parse('{{ internal_work_experiences|tojson }}')
+    {%- set internal_work_experiences_dates = [] -%}
+    {% for t in range(internal_work_experiences|length) %}
+        {%- set internal_work_experiences_dates_from = frappe.utils.get_datetime(internal_work_experiences_extra[t].from_date).strftime('%m/%d/%Y') if internal_work_experiences_extra[t].from_date else 'N/A' -%}
+        {%- set internal_work_experiences_dates_to = frappe.utils.get_datetime(internal_work_experiences_extra[t].to_date).strftime('%m/%d/%Y') if internal_work_experiences_extra[t].to_date else 'N/A' -%}
+        {%- set _ = internal_work_experiences_dates.append([internal_work_experiences_dates_from, internal_work_experiences_dates_to]) -%}
+    {% endfor %}
+    let internal_work_experiences_dates = {{ internal_work_experiences_dates | safe}}
+    internal_work_experiences_dates.forEach((dates, indx) => {
+        internal_work_experiences[indx].from_date = dates[0]; 
+        if(internal_work_experiences[indx].custom_is_present_work==1){
+            internal_work_experiences[indx].to_date = 'PRESENT';
+        }
+        else{
+            internal_work_experiences[indx].to_date = dates[1];
+        }
+        
+        if(internal_work_experiences[indx].custom_iw_status_appointment=='Part Time/Job Order' || internal_work_experiences[indx].custom_iw_status_appointment=='Contract of Service'){  
+            internal_work_experiences[indx].government_service = 'N';
+        }
+        else{
+            internal_work_experiences[indx].government_service = 'Y';
+        } 
+        internal_work_experiences[indx].company_name = '{{company_name[0].company}}';
+    })
+    internal_work_experiences = internal_work_experiences.map((work) => {
+        return {
+            from: work.from_date,
+            to: work.to_date,
+            position: work.custom_iw_position,
+            company: work.company_name,
+            branch: work.branch + ' CAMPUS',
+            office: work.custom_iw_office,
+            unit: work.custom_iw_unit,
+            monthly_salary: work.custom_monthly_salary,
+            hourly_salary: work.custom_hourly_salary,
+            salary_grade: work.custom_iw_pay_grade,
+            status_appointment: work.custom_iw_status_appointment,
+            government_service: work.government_service
+        }
+    })
+
+    let external_work_experiences = JSON.parse('{{ external_work_experiences|tojson }}')
+    {%- set external_work_experiences_dates = [] -%}
+    {% for t in range(external_work_experiences|length) %}
+        {%- set external_work_experiences_dates_from = frappe.utils.get_datetime(external_work_experiences_extra[t].custom_ew_from_date).strftime('%m/%d/%Y') if external_work_experiences_extra[t].custom_ew_from_date else 'N/A' -%}
+        {%- set external_work_experiences_dates_to = frappe.utils.get_datetime(external_work_experiences_extra[t].custom_ew_to_date).strftime('%m/%d/%Y') if external_work_experiences_extra[t].custom_ew_to_date else 'N/A' -%}
+        {%- set _ = external_work_experiences_dates.append([external_work_experiences_dates_from, external_work_experiences_dates_to]) -%}
+    {% endfor %}
+    let external_work_experiences_dates = {{ external_work_experiences_dates | safe}}
+    external_work_experiences_dates.forEach((dates, indx) => {
+        external_work_experiences[indx].custom_ew_from_date = dates[0]; 
+        external_work_experiences[indx].custom_ew_to_date = dates[1]; 
+        external_work_experiences[indx].custom_is_government_service==1 ? external_work_experiences[indx].government_service = 'Y' : external_work_experiences[indx].government_service = 'N'; 
+    })
+    external_work_experiences = external_work_experiences.map((work) => {
+        return {
+            from: work.custom_ew_from_date,
+            to: work.custom_ew_to_date,
+            position: work.custom_ew_position,
+            company: work.company_name,
+            branch: work.custom_ew_branch,
+            office: work.custom_ew_office,
+            unit: work.custom_ew_unit,
+            monthly_salary: work.custom_monthly_salary,
+            salary_grade: work.custom_ew_pay_grade,
+            status_appointment: work.custom_ew_status_appointment,
+            government_service: work.government_service
+        }
+    })
+
+    let work_experiences = [...internal_work_experiences,...external_work_experiences];
+    work_experiences.sort((a,b) => Date.parse(b.to) - Date.parse(a.to))
+    work_experiences.sort((a,b) => Date.parse(b.from) - Date.parse(a.from))
+
+    //PDS Page 3
+    let voluntary_works = JSON.parse('{{ voluntary_works|tojson }}')
+    {%- set voluntary_works_dates = [] -%}
+    {% for t in range(voluntary_works|length) %}
+        {%- set voluntary_works_dates_from = frappe.utils.get_datetime(voluntary_works_extra[t].voluntary_work_inclusive_dates_from).strftime('%m/%d/%Y') if voluntary_works_extra[t].voluntary_work_inclusive_dates_from else 'N/A' -%}
+        {%- set voluntary_works_dates_to = frappe.utils.get_datetime(voluntary_works_extra[t].voluntary_work_inclusive_dates_to).strftime('%m/%d/%Y') if voluntary_works_extra[t].voluntary_work_inclusive_dates_to else 'N/A' -%}
+        {%- set _ = voluntary_works_dates.append([voluntary_works_dates_from, voluntary_works_dates_to]) -%}
+    {% endfor %}
+    let voluntary_works_dates = {{ voluntary_works_dates | safe}}
+    voluntary_works_dates.forEach((dates, indx) => {
+        voluntary_works[indx].voluntary_work_inclusive_dates_from = dates[0]; 
+        voluntary_works[indx].voluntary_work_inclusive_dates_to = dates[1]; 
+    })
+    voluntary_works.sort((a,b) => Date.parse(b.voluntary_work_inclusive_dates_to) - Date.parse(a.voluntary_work_inclusive_dates_to))
+    voluntary_works.sort((a,b) => Date.parse(b.voluntary_work_inclusive_dates_from) - Date.parse(a.voluntary_work_inclusive_dates_from))
+
+    let trainings = JSON.parse('{{ trainings|tojson }}')
+    {%- set training_dates = [] -%}
+    {% for t in range(trainings|length) %}
+        {%- set training_dates_from = frappe.utils.get_datetime(trainings_extra[t].training_program_inclusive_dates_attendance_from).strftime('%m/%d/%Y') -%}
+        {%- set training_dates_to = frappe.utils.get_datetime(trainings_extra[t].training_program_inclusive_dates_attendance_to).strftime('%m/%d/%Y') -%}
+        {%- set _ = training_dates.append([training_dates_from, training_dates_to]) -%}
+    {% endfor %}
+    let training_dates = {{ training_dates | safe}}
+    training_dates.forEach((dates, indx) => {
+        trainings[indx].training_program_inclusive_dates_attendance_from = dates[0]; 
+        trainings[indx].training_program_inclusive_dates_attendance_to = dates[1]; 
+    })
+    trainings.sort((a,b) => Date.parse(b.training_program_inclusive_dates_attendance_to) - Date.parse(a.training_program_inclusive_dates_attendance_to))
+    trainings.sort((a,b) => Date.parse(b.training_program_inclusive_dates_attendance_from) - Date.parse(a.training_program_inclusive_dates_attendance_from))
+
+    let skills_hobbies = JSON.parse('{{ skills_hobbies|tojson }}')
+    let non_academic_distinctions = JSON.parse('{{ non_academic_distinctions|tojson }}')
+    let memberships = JSON.parse('{{ memberships|tojson }}')
+
+    //PDS Page 4
+    let pwd_id = {{ pwd_id|safe }}[0]
+    let solo_parent_id = {{ solo_parent_id|safe }}[0]
+    let primary_id = {{ primary_id|safe }}[0]
+    let references = JSON.parse('{{ references|tojson }}')
+    let hr_director = {{ hr_director|safe }}[0]
+    {% if hr_director %}
+        {% if hr_director_post_nominal_title[0].custom_preferred_post_nominal_titles is none %}
+            let hr_director_post_nominal_title = ''
+            
+        {% else %}
+            let hr_director_post_nominal_title = {{ hr_director_post_nominal_title|safe }}[0]
+           
+        {% endif %}
+    {% endif %}
+
+    let hr_oic = {{ hr_oic|safe }}[0]
+    {% if hr_oic %}
+        {% if hr_oic_post_nominal_title[0].custom_preferred_post_nominal_titles is none %}
+            let hr_oic_post_nominal_title = ''
+           
+        {% else %}
+            let hr_oic_post_nominal_title = {{ hr_oic_post_nominal_title|safe }}[0]
+        {% endif %}
+    {% endif %}
+
+    primary_id.id_date = '{{ frappe.utils.get_datetime(primary_id_extra[0].id_date).strftime('%m/%d/%Y')|safe }}'
+    {% if primary_id_extra[0].id_selected_type == "OTHERS" %}
+        primary_id.id_selected_type = '{{ primary_id_extra[0].id_other_type|safe }}'
+    {% endif %}
+</script>

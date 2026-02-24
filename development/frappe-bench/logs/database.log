@@ -1,0 +1,491 @@
+2026-02-11 05:10:55,937 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` ADD COLUMN `custom_name_extension` varchar(140), ADD COLUMN `custom_place_of_birth` varchar(64), ADD COLUMN `custom_full_maiden_name` varchar(64), ADD COLUMN `custom_gender_preference` varchar(140), ADD COLUMN `custom_civil_status` varchar(140), ADD COLUMN `custom_civil_status_others` varchar(140), ADD COLUMN `custom_height` varchar(64), ADD COLUMN `custom_weight` varchar(64), ADD COLUMN `custom_preferred_post_nominal_titles` varchar(140), ADD COLUMN `custom_telephone_no` varchar(64), ADD COLUMN `custom_citizenship` varchar(64), ADD COLUMN `custom_dual_citizenship_type` varchar(64), ADD COLUMN `custom_dual_citizenship_country` varchar(140), ADD COLUMN `custom_residential_house_block_lot_number` varchar(64), ADD COLUMN `custom_residential_street` varchar(64), ADD COLUMN `custom_residential_subdivision_village` varchar(64), ADD COLUMN `custom_residential_barangay` varchar(64), ADD COLUMN `custom_residential_city_municipality` varchar(64), ADD COLUMN `custom_residential_province` varchar(64), ADD COLUMN `custom_residential_zip_code` varchar(64), ADD COLUMN `custom_is_same_as_residential_address` int(10) not null default 0, ADD COLUMN `custom_permanent_house_block_lot_number` varchar(64), ADD COLUMN `custom_permanent_street` varchar(64), ADD COLUMN `custom_permanent_subdivision_village` varchar(64), ADD COLUMN `custom_permanent_barangay` varchar(64), ADD COLUMN `custom_permanent_city_municipality` varchar(64), ADD COLUMN `custom_permanent_province` varchar(64), ADD COLUMN `custom_permanent_zip_code` varchar(64), ADD COLUMN `custom_old_employee_number` varchar(140), ADD COLUMN `custom_category` varchar(140), ADD COLUMN `custom_office` varchar(140), ADD COLUMN `custom_unit` varchar(140), ADD COLUMN `custom_employment_status` varchar(140), ADD COLUMN `custom_date_of_contractualization` date, ADD COLUMN `custom_position` varchar(140), ADD COLUMN `custom_is_within_third_degree` varchar(64), ADD COLUMN `custom_is_within_fourth_degree` varchar(64), ADD COLUMN `custom_relation_details` varchar(100), ADD COLUMN `custom_is_guilty_admin_offense` varchar(64), ADD COLUMN `custom_admin_offense_details` varchar(100), ADD COLUMN `custom_is_criminally_charged` varchar(64), ADD COLUMN `custom_criminal_charge_date_filed` date, ADD COLUMN `custom_criminal_charge_status` varchar(100), ADD COLUMN `custom_is_convicted` varchar(64), ADD COLUMN `custom_conviction_details` varchar(100), ADD COLUMN `custom_is_separated` varchar(64), ADD COLUMN `custom_separation_details` varchar(100), ADD COLUMN `custom_is_candidate` varchar(64), ADD COLUMN `custom_candidacy_details` varchar(100), ADD COLUMN `custom_is_campaigning` varchar(64), ADD COLUMN `custom_campaigning_details` varchar(100), ADD COLUMN `custom_is_immigrant` varchar(64), ADD COLUMN `custom_immigrant_country` varchar(140), ADD COLUMN `custom_is_indigenous` varchar(64), ADD COLUMN `custom_indigenous_details` varchar(100), ADD COLUMN `pan_number` varchar(140), ADD COLUMN `provident_fund_account` varchar(140), ADD COLUMN `ifsc_code` varchar(140), ADD COLUMN `micr_code` varchar(140), ADD COLUMN `custom_reason_for_leaving_cvsu` varchar(140)
+2026-02-11 05:10:56,010 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `middle_name` varchar(64), MODIFY `cell_number` varchar(64), MODIFY `prefered_email` varchar(64), MODIFY `last_name` varchar(64), MODIFY `ctc` decimal(21,9) not null default 0, MODIFY `company_email` varchar(64), MODIFY `personal_email` varchar(64), MODIFY `first_name` varchar(64), MODIFY `status` varchar(140), MODIFY `prefered_contact_email` varchar(64), ADD UNIQUE INDEX IF NOT EXISTS employee_number (`employee_number`)
+2026-02-11 05:10:56,258 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` ADD COLUMN `custom_is_break` int(1) not null default 0, ADD COLUMN `custom_remarks` varchar(140)
+2026-02-11 05:10:56,277 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `longitude` decimal(21,9) not null default 0, MODIFY `latitude` decimal(21,9) not null default 0
+2026-02-11 05:10:56,566 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` ADD COLUMN `custom_education_level` varchar(140), ADD COLUMN `custom_education_is_completed` int(1) not null default 1, ADD COLUMN `custom_education_school_university` text, ADD COLUMN `custom_education_degree_course` text, ADD COLUMN `custom_education_period_of_attendance_from` int(11) not null default 0, ADD COLUMN `custom_education_period_of_attendance_to` int(11) not null default 0, ADD COLUMN `custom_education_units_earned` varchar(140), ADD COLUMN `custom_education_scholarship_academic_honors_received` varchar(140)
+2026-02-11 05:10:56,757 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` ADD COLUMN `custom_is_government_service` int(1) not null default 0, ADD COLUMN `custom_ew_from_date` date, ADD COLUMN `custom_ew_to_date` date, ADD COLUMN `custom_ew_branch` varchar(140), ADD COLUMN `custom_ew_office` varchar(140), ADD COLUMN `custom_ew_unit` varchar(140), ADD COLUMN `custom_ew_position` varchar(140), ADD COLUMN `custom_monthly_salary` varchar(140), ADD COLUMN `custom_ew_pay_grade` varchar(140), ADD COLUMN `custom_ew_status_appointment` varchar(140)
+2026-02-11 05:10:56,767 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-11 05:10:57,009 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` ADD COLUMN `custom_is_present_work` int(1) not null default 0, ADD COLUMN `custom_iw_office` varchar(140), ADD COLUMN `custom_iw_unit` varchar(140), ADD COLUMN `custom_iw_position` varchar(140), ADD COLUMN `custom_category` varchar(140), ADD COLUMN `custom_iw_status_appointment` varchar(140), ADD COLUMN `custom_hourly_salary` varchar(140), ADD COLUMN `custom_monthly_salary` varchar(140), ADD COLUMN `custom_iw_pay_grade` varchar(140), ADD COLUMN `custom_leave_without_pay` varchar(140), ADD COLUMN `custom_remarks` varchar(140)
+2026-02-11 05:10:57,018 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 00:38:18,124 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 00:38:28,365 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 00:38:39,107 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 00:39:35,800 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 00:39:36,080 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 00:39:36,423 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 00:39:36,625 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 00:39:36,905 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 00:40:29,038 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 00:40:39,537 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 00:40:51,622 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 00:41:42,476 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 00:41:42,763 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 00:41:43,076 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 00:41:43,279 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 00:41:43,549 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 01:23:39,461 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 01:23:49,353 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 01:24:02,002 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 01:24:12,893 WARNING database DDL Query made to DB:
+create table `tabAIS Audit Intake` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`naming_series` varchar(140),
+`disbursement_voucher` varchar(140),
+`received_timestamp` datetime(6),
+`recorded_timestamp` datetime(6),
+`audit_result` varchar(140),
+`findings` text,
+`released_timestamp` datetime(6),
+`released_to` varchar(140),
+`status` varchar(140) default 'Received',
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-16 01:24:13,138 WARNING database DDL Query made to DB:
+create table `tabAIS COA Case` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`naming_series` varchar(140),
+`nd_nc_reference` varchar(140),
+`nfd_reference` varchar(140),
+`coe_reference` varchar(140),
+`liable_party` varchar(140),
+`amount` decimal(21,9) not null default 0,
+`settlement_mode` varchar(140),
+`or_reference` varchar(140),
+`remittance_list_attachment` text,
+`status` varchar(140) default 'ND/NC Received',
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-16 01:24:13,365 WARNING database DDL Query made to DB:
+create table `tabAIS Disbursement Voucher` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`naming_series` varchar(140),
+`control_number` varchar(140) unique,
+`posting_date` date,
+`payee` varchar(140),
+`amount` decimal(21,9) not null default 0,
+`requires_ors_burs` int(1) not null default 1,
+`ors_burs_reference` varchar(140),
+`workflow_status` varchar(140) default 'Draft',
+`journal_entry_reference` varchar(140),
+`payment_entry_reference` varchar(140),
+`attachment_checklist_complete` int(1) not null default 0,
+`remarks` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-16 01:24:13,600 WARNING database DDL Query made to DB:
+create table `tabAIS Official Receipt` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`naming_series` varchar(140),
+`or_number` varchar(140) unique,
+`posting_date` date,
+`company` varchar(140),
+`order_of_payment` varchar(140),
+`customer` varchar(140),
+`amount_paid` decimal(21,9) not null default 0,
+`mode_of_payment` varchar(140),
+`paid_to_account` varchar(140),
+`cost_center` varchar(140),
+`fund_cluster` varchar(140),
+`payment_entry_reference` varchar(140),
+`collection_status` varchar(140) default 'Draft',
+`remarks` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-16 01:24:13,820 WARNING database DDL Query made to DB:
+create table `tabAIS Order of Payment` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`naming_series` varchar(140),
+`request_date` date,
+`requester` varchar(140),
+`requesting_unit` varchar(140),
+`customer` varchar(140),
+`fee_type` varchar(140),
+`purpose` text,
+`amount` decimal(21,9) not null default 0,
+`cost_center` varchar(140),
+`fund_cluster` varchar(140),
+`status` varchar(140) default 'Draft',
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-16 01:24:14,041 WARNING database DDL Query made to DB:
+create table `tabAIS ORS BURS` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`naming_series` varchar(140),
+`requesting_unit` varchar(140),
+`purpose` text,
+`amount` decimal(21,9) not null default 0,
+`fund_source` varchar(140),
+`cost_center` varchar(140),
+`signatories` text,
+`status` varchar(140) default 'Draft',
+`linked_disbursement_voucher` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-16 01:24:54,764 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `ctc` decimal(21,9) not null default 0, MODIFY `status` varchar(140)
+2026-02-16 01:24:55,032 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 01:24:55,333 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 01:24:55,533 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 01:24:55,802 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 01:27:09,401 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 01:27:19,721 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 01:27:31,680 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 01:27:42,568 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAIS COA Case` MODIFY `amount` decimal(21,9) not null default 0
+2026-02-16 01:27:42,840 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAIS ORS BURS` MODIFY `amount` decimal(21,9) not null default 0
+2026-02-16 01:28:24,057 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 01:28:24,325 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 01:28:24,624 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 01:28:24,822 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 01:28:25,080 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 01:36:29,192 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 01:36:39,644 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 01:36:53,047 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 01:37:03,563 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAIS Disbursement Voucher` ADD COLUMN `company` varchar(140), ADD COLUMN `expense_account` varchar(140), ADD COLUMN `payable_account` varchar(140), ADD COLUMN `paid_from_account` varchar(140), ADD COLUMN `fund_cluster` varchar(140)
+2026-02-16 01:37:03,572 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAIS Disbursement Voucher` MODIFY `amount` decimal(21,9) not null default 0
+2026-02-16 01:37:45,339 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `ctc` decimal(21,9) not null default 0, MODIFY `status` varchar(140)
+2026-02-16 01:37:45,625 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 01:37:45,958 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 01:37:46,193 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 01:37:46,546 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 01:46:40,277 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 01:46:49,839 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 01:47:02,177 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 01:47:54,095 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 01:47:54,374 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 01:47:54,704 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 01:47:54,913 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 01:47:55,228 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 01:52:32,241 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 01:52:42,574 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 01:52:55,150 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 01:53:48,195 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 01:53:48,471 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 01:53:48,787 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 01:53:48,988 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 01:53:49,281 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 01:56:11,502 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 01:56:21,710 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 01:56:35,356 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 01:57:27,840 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 01:57:28,173 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 01:57:28,597 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 01:57:28,830 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 01:57:29,140 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 01:58:19,566 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 01:58:30,436 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 01:58:45,131 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 01:59:38,404 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `ctc` decimal(21,9) not null default 0, MODIFY `status` varchar(140)
+2026-02-16 01:59:38,676 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `longitude` decimal(21,9) not null default 0, MODIFY `latitude` decimal(21,9) not null default 0
+2026-02-16 01:59:39,001 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 01:59:39,204 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 01:59:39,478 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 02:05:38,902 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 02:05:49,226 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 02:06:00,745 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 02:06:10,391 WARNING database DDL Query made to DB:
+create table `tabAIS State History` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`reference_doctype` varchar(140),
+`reference_name` varchar(140),
+`state_field` varchar(140),
+`from_state` varchar(140),
+`to_state` varchar(140),
+`event_method` varchar(140),
+`changed_by` varchar(140),
+`changed_on` datetime(6),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-16 02:06:51,576 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 02:06:51,854 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 02:06:52,177 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 02:06:52,388 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 02:06:52,679 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 03:23:05,785 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 03:23:15,572 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 03:23:28,311 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 03:23:38,577 WARNING database DDL Query made to DB:
+create table `tabAIS Attachment Requirement` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`reference_doctype` varchar(140),
+`requirement_code` varchar(140),
+`requirement_label` varchar(140),
+`validation_mode` varchar(140) default 'Filename Contains Keyword',
+`filename_keyword` varchar(140),
+`enabled` int(1) not null default 1,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-02-16 03:24:21,040 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 03:24:21,337 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `latitude` decimal(21,9) not null default 0, MODIFY `longitude` decimal(21,9) not null default 0
+2026-02-16 03:24:21,672 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 03:24:21,885 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 03:24:22,182 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 03:28:11,476 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 03:28:21,495 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 03:28:34,403 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 03:28:45,141 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAIS Attachment Requirement` ADD COLUMN `workflow_state` varchar(140)
+2026-02-16 03:29:28,045 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 03:29:28,331 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `longitude` decimal(21,9) not null default 0, MODIFY `latitude` decimal(21,9) not null default 0
+2026-02-16 03:29:28,652 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 03:29:28,860 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 03:29:29,147 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 03:32:48,399 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 03:32:58,749 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 03:33:10,426 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 03:34:01,439 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `ctc` decimal(21,9) not null default 0, MODIFY `status` varchar(140)
+2026-02-16 03:34:01,731 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `longitude` decimal(21,9) not null default 0, MODIFY `latitude` decimal(21,9) not null default 0
+2026-02-16 03:34:02,122 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 03:34:02,327 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 03:34:02,615 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 03:39:31,213 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 03:39:40,850 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 03:39:53,872 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 03:40:45,867 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 03:40:46,151 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `longitude` decimal(21,9) not null default 0, MODIFY `latitude` decimal(21,9) not null default 0
+2026-02-16 03:40:46,486 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 03:40:46,708 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 03:40:46,989 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date
+2026-02-16 03:43:22,848 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-02-16 03:43:33,070 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2026-02-16 03:43:44,412 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2026-02-16 03:44:35,183 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee` MODIFY `status` varchar(140), MODIFY `ctc` decimal(21,9) not null default 0
+2026-02-16 03:44:35,482 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` MODIFY `longitude` decimal(21,9) not null default 0, MODIFY `latitude` decimal(21,9) not null default 0
+2026-02-16 03:44:35,821 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Education` MODIFY `custom_education_units_earned` varchar(140)
+2026-02-16 03:44:36,044 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee External Work History` MODIFY `salary` decimal(21,9) not null default 0
+2026-02-16 03:44:36,326 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Internal Work History` MODIFY `from_date` date

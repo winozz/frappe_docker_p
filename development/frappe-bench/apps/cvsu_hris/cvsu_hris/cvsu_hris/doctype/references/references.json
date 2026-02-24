@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-27 08:18:35.902173",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "references_name",
+  "references_address",
+  "references_telephone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "references_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "references_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Office / Residential Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "references_telephone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact No. and/or Email",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-11 10:31:29.249696",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "References",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

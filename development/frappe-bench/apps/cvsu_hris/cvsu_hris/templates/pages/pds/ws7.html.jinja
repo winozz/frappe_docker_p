@@ -1,0 +1,61 @@
+<div x-data="{'entries': [] }" x-init="$watch('$store.eligibilities', (update) => { entries = update.filter((entry, indx) => !entry.is_terminal && indx >= 7) })"  x-show="entries.length">
+	<div class="page-break"></div>
+	<div class="worksheet extra-sheet" data-fit-width="true">
+		<div id="WS-E7" class="content">
+			<table id="T-E7">
+				<thead>
+					<tr>
+						<th class="H-1"></th>
+						<th class="H-2"></th>
+						<th class="H-3"></th>
+						<th class="H-4"></th>
+						<th class="H-5"></th>
+						<th class="H-6"></th>
+						<th class="H-7"></th>
+						<th class="H-8"></th>
+						<th class="H-9"></th>
+						<th class="H-10"></th>
+						<th class="H-11"></th>
+						<th class="H-12"></th>
+						<th class="H-13"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="R-1">
+						<td class="C-1" colspan="13">IV. CIVIL SERVICE ELIGIBILITY</td>
+					</tr>
+					<tr class="R-2">
+						<td class="C-1">27.</td>
+						<td class="C-2" colspan="4" rowspan="2">CAREER SERVICE/ RA 1080 (BOARD/ BAR) UNDER<br />SPECIAL LAWS/ CES/ CSEE<br />BARANGAY ELIGIBILITY / DRIVER'S LICENSE</td>
+						<td class="C-6" rowspan="2">RATING<br />(If Applicable)</td>
+						<td class="C-7" colspan="2" rowspan="2">DATE OF EXAMINATION / CONFERMENT</td>
+						<td class="C-9" colspan="3" rowspan="2">PLACE OF EXAMINATION / CONFERMENT</td>
+						<td class="C-12" colspan="2">LICENSE (if applicable)</td>
+					</tr>
+					<tr class="R-3">
+						<td class="C-1"></td>
+						<td class="C-12">NUMBER</td>
+						<td class="C-13">Date of<br />Validity</td>
+					</tr>
+					<template x-for="entry in entries">
+					<tr class="R-4">
+						<td class="C-1" colspan="5" x-text="entry.fields[0].text"></td>
+						<td class="C-6" x-text="entry.fields[1].text"></td>
+						<td class="C-7" colspan="2" x-text="entry.fields[2].text"></td>
+						<td class="C-9" colspan="3" x-text="entry.fields[3].text"></td>
+						<td class="C-12" x-text="entry.fields[4].text"></td>
+						<td class="C-13" x-text="entry.fields[5].text"></td>
+					</tr>
+					</template>
+					<tr class="R-Signature">
+						<td class="C-1" colspan="3">SIGNATURE</td>
+						<td class="C-3" colspan="4"></td>
+						<td class="C-7" colspan="3">DATE</td>
+						<td class="C-9" colspan="3"></td>
+					</tr>				
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,23 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Schedule Label",
+  "modified": "2025-11-13 11:30:33.639042",
+  "name": "Regular",
+  "schedule_label": "Regular"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Schedule Label",
+  "modified": "2025-11-13 11:31:08.036512",
+  "name": "Overtime",
+  "schedule_label": "Overtime"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Schedule Label",
+  "modified": "2025-11-13 11:31:26.375851",
+  "name": "Part-time",
+  "schedule_label": "Part-time"
+ }
+]

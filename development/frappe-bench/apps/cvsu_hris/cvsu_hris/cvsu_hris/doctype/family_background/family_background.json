@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-16 09:55:21.576902",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "relationship",
+  "surname",
+  "first_name",
+  "middle_name",
+  "name_extension",
+  "date_of_birth",
+  "column_break_yebk",
+  "telephone_number",
+  "occupation",
+  "employers_business_name",
+  "employers_business_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Relationship",
+   "length": 10,
+   "options": "\nSpouse\nFather\nMother\nChildren",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Surname",
+   "length": 50,
+   "reqd": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "length": 50,
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Middle Name",
+   "length": 50
+  },
+  {
+   "fieldname": "name_extension",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Name Extension",
+   "length": 5,
+   "options": "\nII\nIII\nIV\nV\nJr.\nSr."
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth"
+  },
+  {
+   "depends_on": "eval:doc.relationship=='Spouse'",
+   "fieldname": "telephone_number",
+   "fieldtype": "Data",
+   "label": "Telephone Number",
+   "length": 14
+  },
+  {
+   "depends_on": "eval:doc.relationship=='Spouse'",
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation",
+   "length": 50
+  },
+  {
+   "depends_on": "eval:doc.relationship=='Spouse'",
+   "fieldname": "employers_business_name",
+   "fieldtype": "Data",
+   "label": "Employer/Business Name",
+   "length": 50
+  },
+  {
+   "depends_on": "eval:doc.relationship=='Spouse'",
+   "fieldname": "employers_business_address",
+   "fieldtype": "Data",
+   "label": "Employer's Business Address",
+   "length": 50
+  },
+  {
+   "fieldname": "column_break_yebk",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-11-27 08:06:48.608241",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "Family Background",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

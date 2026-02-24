@@ -1,0 +1,51 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Gender",
+  "gender": "Other",
+  "modified": "2024-01-22 11:26:30.756427",
+  "name": "Other"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gender",
+  "gender": "Transgender",
+  "modified": "2024-01-22 11:26:30.757707",
+  "name": "Transgender"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gender",
+  "gender": "Genderqueer",
+  "modified": "2024-01-22 11:26:30.758930",
+  "name": "Genderqueer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gender",
+  "gender": "Non-Conforming",
+  "modified": "2024-01-22 11:26:30.765699",
+  "name": "Non-Conforming"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gender",
+  "gender": "Prefer not to say",
+  "modified": "2024-01-22 11:26:30.768744",
+  "name": "Prefer not to say"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gender",
+  "gender": "Female",
+  "modified": "2024-02-26 10:55:04.406714",
+  "name": "Female"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gender",
+  "gender": "Male",
+  "modified": "2024-02-26 10:54:59.339752",
+  "name": "Male"
+ }
+]

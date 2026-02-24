@@ -1,0 +1,4 @@
+<!--Show checkbox-->
+{% macro show_checkbox(label, is_checked='') -%}
+    <span class="checkbox">{{ '&#9745;' if is_checked else '&#9744;' }}</span> {{label}}
+{%- endmacro %}

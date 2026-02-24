@@ -1,0 +1,37 @@
+<div x-data="{'entries': [] }" x-init="$watch('$store.organizations', (update) => { entries = update.filter((entry, indx) => !entry.is_terminal && indx >= 7) })"  x-show="entries.length">
+	<div class="page-break"></div>
+	<div class="worksheet extra-sheet" data-fit-width="true">
+		<div id="WS-E11" class="content">
+			<table id="T-E11">
+				<thead>
+					<tr>
+						<th class="H-1"></th>
+						<th class="H-2" colspan="2"></th>
+						<th class="H-3"></th>
+						<th class="H-4" colspan="2"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="R-1">
+						<td class="C-1" colspan="6">VIII. OTHER INFORMATION</td>
+					</tr>
+					<tr class="R-2">
+						<td class="C-1">33.</td>
+						<td class="C-2" colspan="5">MEMBERSHIP IN ASSOCIATION/ORGANIZATION<br/>(Write in full)</td>
+					</tr>
+					<template x-for="entry in entries">
+					<tr class="R-3">
+						<td class="C-1" colspan="6" x-text="entry.fields[0].text"></td>
+					</tr>
+					</template>
+					<tr class="R-Signature">
+						<td class="C-1" colspan="1">SIGNATURE</td>
+						<td class="C-3" colspan="2"></td>
+						<td class="C-7" colspan="1">DATE</td>
+						<td class="C-9" colspan="2"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

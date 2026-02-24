@@ -1,0 +1,47 @@
+# CvSU AIS Project
+
+You are working on the Cavite State University Accounting Information System (AIS) using Frappe Framework.
+
+## 🎯 Auto-loaded Rules
+
+### Reference Documents
+- [Project Charter](.github/PROJECT_CHARTER.md) - Requirements & calculations
+- [Development Guidelines](.github/DEVELOPMENT_GUIDELINES.md) - Code standards
+- [Agent Instructions](.github/AGENT_INSTRUCTIONS.md) - Implementation patterns
+
+### Non-Negotiable
+1. **Decimal for money** - NEVER use float
+2. **Budget = HARD STOP** - Throw exception if insufficient
+3. **Posted docs = IMMUTABLE** - Require reversal entries
+4. **UACS compliance** - All accounts must be valid
+5. **Fund Cluster mandatory** - Tag every transaction
+6. **Audit everything** - Complete trail (Who/What/When/Why)
+
+### Philippine Tax Rules (BIR)
+```python
+from decimal import Decimal
+# VAT Registered: 5% VAT + 1% EWT (Goods) or 2% EWT (Services)
+gross = Decimal('112000.00')
+net_of_vat = gross / Decimal('1.12')
+vat = net_of_vat * Decimal('0.05')
+ewt = net_of_vat * Decimal('0.01')  # or 0.02 for services
+net_payable = gross - vat - ewt
+```
+
+### Budget Validation Pattern
+```python
+if requested > available:
+    frappe.throw(f"Insufficient Budget. Available: ₱{available:,.2f}")
+```
+
+## Project Phases
+1. Phase 1: Foundation & Master Data
+2. Phase 2: Collections & Cashiering
+3. Phase 3: Disbursements & Budget
+4. Phase 4: Reporting & Hardening
+
+## Tech Stack
+- Python 3.11.6 + Frappe v15
+- MariaDB 11.8
+- Docker containers
+- Follow Java Spring patterns (services/repositories/api)

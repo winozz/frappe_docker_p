@@ -1,0 +1,1289 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.098866",
+  "name": "TEACHER EDUCATION DEPARTMENT (Silang)",
+  "office": "Silang",
+  "unit": "TEACHER EDUCATION DEPARTMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.125515",
+  "name": "DEPARTMENT OF ARTS AND SCIENCES (Silang)",
+  "office": "Silang",
+  "unit": "DEPARTMENT OF ARTS AND SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.131537",
+  "name": "DEPARTMENT OF INFORMATION TECHNOLOGY (Silang)",
+  "office": "Silang",
+  "unit": "DEPARTMENT OF INFORMATION TECHNOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.137699",
+  "name": "DEPARTMENT OF MANAGEMENT (Silang)",
+  "office": "Silang",
+  "unit": "DEPARTMENT OF MANAGEMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.143547",
+  "name": "DEPARTMENT OF ARTS AND SCIENCES (General Trias)",
+  "office": "General Trias",
+  "unit": "DEPARTMENT OF ARTS AND SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.149098",
+  "name": "DEPARTMENT OF TEACHER EDUCATION (General Trias)",
+  "office": "General Trias",
+  "unit": "DEPARTMENT OF TEACHER EDUCATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.155107",
+  "name": "DEPARTMENT OF TOURISM AND HOSPITALITY MANAGEMENT (General Trias)",
+  "office": "General Trias",
+  "unit": "DEPARTMENT OF TOURISM AND HOSPITALITY MANAGEMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.160659",
+  "name": "DEPARTMENT OF INFORMATION TECHNOLOGY (General Trias)",
+  "office": "General Trias",
+  "unit": "DEPARTMENT OF INFORMATION TECHNOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.166173",
+  "name": "ADMINISTRATIVE, FINANCE AND SUPPORT SERVICES (General Trias)",
+  "office": "General Trias",
+  "unit": "ADMINISTRATIVE, FINANCE AND SUPPORT SERVICES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.171550",
+  "name": "DEPARTMENT OF MANAGEMENT STUDIES (General Trias)",
+  "office": "General Trias",
+  "unit": "DEPARTMENT OF MANAGEMENT STUDIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.176860",
+  "name": "INDUSTRIAL AND INFORMATION TECHNOLOGY (Carmona)",
+  "office": "Carmona",
+  "unit": "INDUSTRIAL AND INFORMATION TECHNOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.182839",
+  "name": "ARTS AND SCIENCES (Carmona)",
+  "office": "Carmona",
+  "unit": "ARTS AND SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.188354",
+  "name": "MANAGEMENT (Carmona)",
+  "office": "Carmona",
+  "unit": "MANAGEMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.193477",
+  "name": "TEACHER EDUCATION (Carmona)",
+  "office": "Carmona",
+  "unit": "TEACHER EDUCATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.198677",
+  "name": "ADMIN (Carmona)",
+  "office": "Carmona",
+  "unit": "ADMIN",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.204102",
+  "name": "REGISTRAR (Carmona)",
+  "office": "Carmona",
+  "unit": "REGISTRAR",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.210468",
+  "name": "ARTS AND SCIENCES DEPARTMENT (Naic)",
+  "office": "Naic",
+  "unit": "ARTS AND SCIENCES DEPARTMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.216109",
+  "name": "TEACHER EDUCATION DEPARTMENT (Naic)",
+  "office": "Naic",
+  "unit": "TEACHER EDUCATION DEPARTMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.221490",
+  "name": "FISHERIES AND AQUATIC SCIENCES (Naic)",
+  "office": "Naic",
+  "unit": "FISHERIES AND AQUATIC SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.226630",
+  "name": "MANAGEMENT DEPARTMENT (Naic)",
+  "office": "Naic",
+  "unit": "MANAGEMENT DEPARTMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.231868",
+  "name": "INFORMATION TECHNOLOGY DEPARTMENT (Naic)",
+  "office": "Naic",
+  "unit": "INFORMATION TECHNOLOGY DEPARTMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.237402",
+  "name": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (INFIRMARY) (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (INFIRMARY)",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.243346",
+  "name": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (HR) (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (HR)",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.249099",
+  "name": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.254436",
+  "name": "OFFICE OF THE DIRECTOR FOR CURRICULUM AND INSTRUCTION (LIBRARY) (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR CURRICULUM AND INSTRUCTION (LIBRARY)",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.259773",
+  "name": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (ACCOUNTING) (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (ACCOUNTING)",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.264783",
+  "name": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (CASHIER) (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (CASHIER)",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.270181",
+  "name": "OFFICE OF THE DIRECTOR FOR CURRICULUM AND INSTRUCTION (REGISTRAR) (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR CURRICULUM AND INSTRUCTION (REGISTRAR)",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.275424",
+  "name": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (SUPPLY) (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (SUPPLY)",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.280730",
+  "name": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (MABOLO ANNEX) (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR ADMINISTRATIVE AND SUPPORT SERVICES (MABOLO ANNEX)",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.286413",
+  "name": "OFFICE OF THE DIRECTOR FOR STUDENT AFFAIRS AND SERVICES (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR STUDENT AFFAIRS AND SERVICES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.292092",
+  "name": "OFFICE OF THE DIRECTOR FOR CURRICULUM AND INSTRUCTION (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR CURRICULUM AND INSTRUCTION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.297332",
+  "name": "OFFICE OF THE DIRECTOR FOR RESEARCH DEVELOPMENT AND EXTENSION SERVICES (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE DIRECTOR FOR RESEARCH DEVELOPMENT AND EXTENSION SERVICES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.302544",
+  "name": "OFFICE OF THE CAMPUS ADMINISTRATOR (RECORDS) (Naic)",
+  "office": "Naic",
+  "unit": "OFFICE OF THE CAMPUS ADMINISTRATOR (RECORDS)",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.307909",
+  "name": "DEPARTMENT OF INFORMATION TECHNOLOGY (Tanza)",
+  "office": "Tanza",
+  "unit": "DEPARTMENT OF INFORMATION TECHNOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.313215",
+  "name": "DEPARTMENT OF MANAGEMENT (Tanza)",
+  "office": "Tanza",
+  "unit": "DEPARTMENT OF MANAGEMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.318817",
+  "name": "GENERAL AND TEACHER EDUCATION DEPARTMENT (Tanza)",
+  "office": "Tanza",
+  "unit": "GENERAL AND TEACHER EDUCATION DEPARTMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.323978",
+  "name": "ADMINISTRATION (Tanza)",
+  "office": "Tanza",
+  "unit": "ADMINISTRATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.329117",
+  "name": "ADMINISTRAION (Tanza)",
+  "office": "Tanza",
+  "unit": "ADMINISTRAION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.334470",
+  "name": "DEPARTMNET OF INFORMATION AND TECHNOLOGY (Tanza)",
+  "office": "Tanza",
+  "unit": "DEPARTMNET OF INFORMATION AND TECHNOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.339718",
+  "name": "GENERAL AND TEACHER EDUCATION (Tanza)",
+  "office": "Tanza",
+  "unit": "GENERAL AND TEACHER EDUCATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.344928",
+  "name": "LIBRARY (Tanza)",
+  "office": "Tanza",
+  "unit": "LIBRARY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.350720",
+  "name": "PHYSICAL PLANNING AND MAINTENANCE SERVICES OFFICE (Imus)",
+  "office": "Imus",
+  "unit": "PHYSICAL PLANNING AND MAINTENANCE SERVICES OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.355871",
+  "name": "DEPARTMENT OF PHYSICAL EDUCATION (Imus)",
+  "office": "Imus",
+  "unit": "DEPARTMENT OF PHYSICAL EDUCATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.361589",
+  "name": "DEPARTMENT OF SOCIAL SCIENCES AND HUMANITIES (Imus)",
+  "office": "Imus",
+  "unit": "DEPARTMENT OF SOCIAL SCIENCES AND HUMANITIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.368271",
+  "name": "DEPARTMENT OF HOSPITALITY MANAGEMENT (Imus)",
+  "office": "Imus",
+  "unit": "DEPARTMENT OF HOSPITALITY MANAGEMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.373886",
+  "name": "TEACHER EDUCATION DEPARTMENT (Imus)",
+  "office": "Imus",
+  "unit": "TEACHER EDUCATION DEPARTMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.379431",
+  "name": "DEPARTMENT OF BIOLOGICAL AND PHYSICAL SCIENCES (Imus)",
+  "office": "Imus",
+  "unit": "DEPARTMENT OF BIOLOGICAL AND PHYSICAL SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.385042",
+  "name": "RESEARCH, DEVELOPMENT AND EXTENSION OFFICE (Imus)",
+  "office": "Imus",
+  "unit": "RESEARCH, DEVELOPMENT AND EXTENSION OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.390904",
+  "name": "OFFICE OF THE CAMPUS REGISTRAR (Imus)",
+  "office": "Imus",
+  "unit": "OFFICE OF THE CAMPUS REGISTRAR",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.398275",
+  "name": "DEPARTMENT OF MANAGEMENT (Imus)",
+  "office": "Imus",
+  "unit": "DEPARTMENT OF MANAGEMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.403926",
+  "name": "DEPARTMENT OF COMPUTER STUDIES (Imus)",
+  "office": "Imus",
+  "unit": "DEPARTMENT OF COMPUTER STUDIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.409411",
+  "name": "CASHIER AND ACCOUNTING OFFICE (Imus)",
+  "office": "Imus",
+  "unit": "CASHIER AND ACCOUNTING OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.414708",
+  "name": "DEPARTMENT OF LANGUAGES AND MASS COMMUNICATION (Imus)",
+  "office": "Imus",
+  "unit": "DEPARTMENT OF LANGUAGES AND MASS COMMUNICATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.420258",
+  "name": "MANAGEMENT INFORMATION SYSTEM OFFICE (Imus)",
+  "office": "Imus",
+  "unit": "MANAGEMENT INFORMATION SYSTEM OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.425435",
+  "name": "PROPERTY AND SUPPLY OFFICE (Imus)",
+  "office": "Imus",
+  "unit": "PROPERTY AND SUPPLY OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.430518",
+  "name": "OFFICE OF STUDENT AFFAIRS AND SERVICES (Imus)",
+  "office": "Imus",
+  "unit": "OFFICE OF STUDENT AFFAIRS AND SERVICES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.435749",
+  "name": "HUMAN RESOURCE DEVELOPMENT OFFICE (Imus)",
+  "office": "Imus",
+  "unit": "HUMAN RESOURCE DEVELOPMENT OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.440985",
+  "name": "CIVIL SECURITY OFFICE (Imus)",
+  "office": "Imus",
+  "unit": "CIVIL SECURITY OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.446654",
+  "name": "HEALTH SERVICE UNIT (Imus)",
+  "office": "Imus",
+  "unit": "HEALTH SERVICE UNIT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.452275",
+  "name": "CAMPUS LIBRARY (Imus)",
+  "office": "Imus",
+  "unit": "CAMPUS LIBRARY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.457994",
+  "name": "OFFICE OF THE CAMPUS ADMINISTRATOR (Imus)",
+  "office": "Imus",
+  "unit": "OFFICE OF THE CAMPUS ADMINISTRATOR",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.463202",
+  "name": "DEPARTMENT OF ARTS AND SCIENCES (Cavite City)",
+  "office": "Cavite City",
+  "unit": "DEPARTMENT OF ARTS AND SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.468841",
+  "name": "DEPARTMENT OF INFORMATION TECHNOLOGY (Cavite City)",
+  "office": "Cavite City",
+  "unit": "DEPARTMENT OF INFORMATION TECHNOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.474076",
+  "name": "DEPARTMENT OF TEACHER EDUCATION AND LANGUAGES (Cavite City)",
+  "office": "Cavite City",
+  "unit": "DEPARTMENT OF TEACHER EDUCATION AND LANGUAGES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.479273",
+  "name": "DEPARTMENT OF MANAGEMENT (Cavite City)",
+  "office": "Cavite City",
+  "unit": "DEPARTMENT OF MANAGEMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.484870",
+  "name": "DEPARTMENT OF TEACHER EDUCATION (Bacoor)",
+  "office": "Bacoor",
+  "unit": "DEPARTMENT OF TEACHER EDUCATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.490143",
+  "name": "DEPARTMENT OF CRIMINOLOGY (Bacoor)",
+  "office": "Bacoor",
+  "unit": "DEPARTMENT OF CRIMINOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.495264",
+  "name": "CAMPUS LIBRARY (Bacoor)",
+  "office": "Bacoor",
+  "unit": "CAMPUS LIBRARY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.500571",
+  "name": "DEPARTMENT OFCOMPUTER STUDIES (Bacoor)",
+  "office": "Bacoor",
+  "unit": "DEPARTMENT OFCOMPUTER STUDIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.505902",
+  "name": "DEPARTMENT OF ARTS AND SCIENCES (Bacoor)",
+  "office": "Bacoor",
+  "unit": "DEPARTMENT OF ARTS AND SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.511238",
+  "name": "DEPARTMENT OF MANAGEMENT STUDIES (Bacoor)",
+  "office": "Bacoor",
+  "unit": "DEPARTMENT OF MANAGEMENT STUDIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.516800",
+  "name": "REGISTRAR OFFICE (Bacoor)",
+  "office": "Bacoor",
+  "unit": "REGISTRAR OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.522666",
+  "name": "DEPARTMENT OF COMPUTER STUDIES (Bacoor)",
+  "office": "Bacoor",
+  "unit": "DEPARTMENT OF COMPUTER STUDIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.527910",
+  "name": "UTILITY (Bacoor)",
+  "office": "Bacoor",
+  "unit": "UTILITY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.533124",
+  "name": "DEPARTMENT OF COMPUTER SCIENCE (Bacoor)",
+  "office": "Bacoor",
+  "unit": "DEPARTMENT OF COMPUTER SCIENCE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.539434",
+  "name": "SECURITY (Bacoor)",
+  "office": "Bacoor",
+  "unit": "SECURITY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.544715",
+  "name": "CAMPUS CLINIC (Bacoor)",
+  "office": "Bacoor",
+  "unit": "CAMPUS CLINIC",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.550215",
+  "name": "HUMAN RESOURCE AND DEVELOPMENT OFFICE (Bacoor)",
+  "office": "Bacoor",
+  "unit": "HUMAN RESOURCE AND DEVELOPMENT OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.555961",
+  "name": "LIAISON (Bacoor)",
+  "office": "Bacoor",
+  "unit": "LIAISON",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.561308",
+  "name": "PROCUREMENT OFFICE (Bacoor)",
+  "office": "Bacoor",
+  "unit": "PROCUREMENT OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.566925",
+  "name": "MAINTENANCE (Bacoor)",
+  "office": "Bacoor",
+  "unit": "MAINTENANCE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.572826",
+  "name": "DEPARTMENT OF MANAGEMENT STUDIES \\ PROPERTY MANAGEMENT OFFICE (Bacoor)",
+  "office": "Bacoor",
+  "unit": "DEPARTMENT OF MANAGEMENT STUDIES \\ PROPERTY MANAGEMENT OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.578204",
+  "name": "SUPPLY OFFICE (Bacoor)",
+  "office": "Bacoor",
+  "unit": "SUPPLY OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.584851",
+  "name": "IDO OFFICE (Bacoor)",
+  "office": "Bacoor",
+  "unit": "IDO OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.591522",
+  "name": "CAMPUS CASHIER (Bacoor)",
+  "office": "Bacoor",
+  "unit": "CAMPUS CASHIER",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.597504",
+  "name": "DEPARTMENT OF MANAGEMENT STDIES (Bacoor)",
+  "office": "Bacoor",
+  "unit": "DEPARTMENT OF MANAGEMENT STDIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.603682",
+  "name": "GUIDANCE OFFICE (Bacoor)",
+  "office": "Bacoor",
+  "unit": "GUIDANCE OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.609366",
+  "name": "DEPARTMENT OF INDUSTRIAL ENGINEERING AND TECHNOLOGY (College of Engineering and Information Technology)",
+  "office": "College of Engineering and Information Technology",
+  "unit": "DEPARTMENT OF INDUSTRIAL ENGINEERING AND TECHNOLOGY",
+  "unit_abbreviation": "DIET"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.614689",
+  "name": "DEPARTMENT OF INFORMATION TECHNOLOGY (College of Engineering and Information Technology)",
+  "office": "College of Engineering and Information Technology",
+  "unit": "DEPARTMENT OF INFORMATION TECHNOLOGY",
+  "unit_abbreviation": "DIT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.620739",
+  "name": "DEPARTMENT OF COMPUTER, ELECTRONICS, AND ELECTRICAL ENGINEERING (College of Engineering and Information Technology)",
+  "office": "College of Engineering and Information Technology",
+  "unit": "DEPARTMENT OF COMPUTER, ELECTRONICS, AND ELECTRICAL ENGINEERING",
+  "unit_abbreviation": "DCEEE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.626601",
+  "name": "DEPARTMENT OF CIVIL ENGINEERING AND ARCHITECTURE (College of Engineering and Information Technology)",
+  "office": "College of Engineering and Information Technology",
+  "unit": "DEPARTMENT OF CIVIL ENGINEERING AND ARCHITECTURE",
+  "unit_abbreviation": "DCEA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.632080",
+  "name": "DEPARTMENT OF AGRICULTURE AND FOOD ENGINEERING (College of Engineering and Information Technology)",
+  "office": "College of Engineering and Information Technology",
+  "unit": "DEPARTMENT OF AGRICULTURE AND FOOD ENGINEERING",
+  "unit_abbreviation": "DAFE"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.638266",
+  "name": "COLLEGE OF ENGINEERING AND INFORMATION TECHNOLOGY (College of Engineering and Information Technology)",
+  "office": "College of Engineering and Information Technology",
+  "unit": "COLLEGE OF ENGINEERING AND INFORMATION TECHNOLOGY",
+  "unit_abbreviation": "CEIT"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.643923",
+  "name": "CENTRAL COMPUTER LABORATORY (College of Engineering and Information Technology)",
+  "office": "College of Engineering and Information Technology",
+  "unit": "CENTRAL COMPUTER LABORATORY",
+  "unit_abbreviation": "CCL"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.649438",
+  "name": "ECONOMICS (College of Economics, Management and Development Studies)",
+  "office": "College of Economics, Management and Development Studies",
+  "unit": "ECONOMICS",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.655405",
+  "name": "MANAGEMENT (College of Economics, Management and Development Studies)",
+  "office": "College of Economics, Management and Development Studies",
+  "unit": "MANAGEMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.660908",
+  "name": "DEVELOPMENT STUDIES (College of Economics, Management and Development Studies)",
+  "office": "College of Economics, Management and Development Studies",
+  "unit": "DEVELOPMENT STUDIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.666341",
+  "name": "ACCOUNTANCY (College of Economics, Management and Development Studies)",
+  "office": "College of Economics, Management and Development Studies",
+  "unit": "ACCOUNTANCY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.673668",
+  "name": "OFFICE ADMINISTRATION (College of Economics, Management and Development Studies)",
+  "office": "College of Economics, Management and Development Studies",
+  "unit": "OFFICE ADMINISTRATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.679165",
+  "name": "REGISTRAR'S OFFICE (College of Economics, Management and Development Studies)",
+  "office": "College of Economics, Management and Development Studies",
+  "unit": "REGISTRAR'S OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.685091",
+  "name": "DEAN'S OFFICE (College of Economics, Management and Development Studies)",
+  "office": "College of Economics, Management and Development Studies",
+  "unit": "DEAN'S OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.690641",
+  "name": "DEAN'S OFFICE (College of Agriculture, Food, Environment and Natural Resources)",
+  "office": "College of Agriculture, Food, Environment and Natural Resources",
+  "unit": "DEAN'S OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.696271",
+  "name": "DCS (College of Agriculture, Food, Environment and Natural Resources)",
+  "office": "College of Agriculture, Food, Environment and Natural Resources",
+  "unit": "DCS",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.702323",
+  "name": "IFST (College of Agriculture, Food, Environment and Natural Resources)",
+  "office": "College of Agriculture, Food, Environment and Natural Resources",
+  "unit": "IFST",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.708037",
+  "name": "DAS (College of Agriculture, Food, Environment and Natural Resources)",
+  "office": "College of Agriculture, Food, Environment and Natural Resources",
+  "unit": "DAS",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.713486",
+  "name": "DAE (College of Agriculture, Food, Environment and Natural Resources)",
+  "office": "College of Agriculture, Food, Environment and Natural Resources",
+  "unit": "DAE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.719883",
+  "name": "DFES (College of Agriculture, Food, Environment and Natural Resources)",
+  "office": "College of Agriculture, Food, Environment and Natural Resources",
+  "unit": "DFES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.725986",
+  "name": "REGISTRAR'S OFFICE (College of Agriculture, Food, Environment and Natural Resources)",
+  "office": "College of Agriculture, Food, Environment and Natural Resources",
+  "unit": "REGISTRAR'S OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.731209",
+  "name": "DAS/CVMBS (College of Agriculture, Food, Environment and Natural Resources)",
+  "office": "College of Agriculture, Food, Environment and Natural Resources",
+  "unit": "DAS/CVMBS",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.738057",
+  "name": "TEACHER EDUCATION DEPARTMENT (College of Education)",
+  "office": "College of Education",
+  "unit": "TEACHER EDUCATION DEPARTMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.743586",
+  "name": "TEACHER EDUCATION DEPARTMENT (College of Arts and Sciences)",
+  "office": "College of Arts and Sciences",
+  "unit": "TEACHER EDUCATION DEPARTMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.748754",
+  "name": "HEVTED (College of Education)",
+  "office": "College of Education",
+  "unit": "HEVTED",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.755949",
+  "name": "LSHS (College of Education)",
+  "office": "College of Education",
+  "unit": "LSHS",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.761401",
+  "name": "CLINICAL SCIENCES (College of Medicine)",
+  "office": "College of Medicine",
+  "unit": "CLINICAL SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.767192",
+  "name": "POPULATION & PUBLIC HEALTH (College of Medicine)",
+  "office": "College of Medicine",
+  "unit": "POPULATION & PUBLIC HEALTH",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.773976",
+  "name": "BASIC SCIENCES (College of Medicine)",
+  "office": "College of Medicine",
+  "unit": "BASIC SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.779166",
+  "name": "OFFICE OF THE DEAN (College of Medicine)",
+  "office": "College of Medicine",
+  "unit": "OFFICE OF THE DEAN",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.785050",
+  "name": "DEPARTMENT OF BASIC VETERINARY SCIENCES (College of Veterinary Medicine and Biomedical Sciences)",
+  "office": "College of Veterinary Medicine and Biomedical Sciences",
+  "unit": "DEPARTMENT OF BASIC VETERINARY SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.791833",
+  "name": "DEPARTMENT OF CLINICAL AND POPULATION HEALTH (College of Veterinary Medicine and Biomedical Sciences)",
+  "office": "College of Veterinary Medicine and Biomedical Sciences",
+  "unit": "DEPARTMENT OF CLINICAL AND POPULATION HEALTH",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.797441",
+  "name": "DEPARTMENT OF IMMUNOPATHOLOGY AND MICROBIOLOGY (College of Veterinary Medicine and Biomedical Sciences)",
+  "office": "College of Veterinary Medicine and Biomedical Sciences",
+  "unit": "DEPARTMENT OF IMMUNOPATHOLOGY AND MICROBIOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.804620",
+  "name": "DE (Rosario)",
+  "office": "Rosario",
+  "unit": "DE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.809811",
+  "name": "DEPARTMENT OF TEACHER EDUCATION (Rosario)",
+  "office": "Rosario",
+  "unit": "DEPARTMENT OF TEACHER EDUCATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.815175",
+  "name": "DEPARTMENT OF MANAGEMENT STUDIES (Rosario)",
+  "office": "Rosario",
+  "unit": "DEPARTMENT OF MANAGEMENT STUDIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.821915",
+  "name": "DEPARTMENT OF ARTS AND SCIENCES (Rosario)",
+  "office": "Rosario",
+  "unit": "DEPARTMENT OF ARTS AND SCIENCES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.827312",
+  "name": "DEPARTMENT OF COMPUTER STUDIES (Rosario)",
+  "office": "Rosario",
+  "unit": "DEPARTMENT OF COMPUTER STUDIES",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.832670",
+  "name": "DEPARTMENT OF INFORMATION TECHNOLOGY (Rosario)",
+  "office": "Rosario",
+  "unit": "DEPARTMENT OF INFORMATION TECHNOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.839321",
+  "name": "DEPARTMENT OF TEACHER EDUCATION (Silang)",
+  "office": "Silang",
+  "unit": "DEPARTMENT OF TEACHER EDUCATION",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.844782",
+  "name": "DEPARTMENT OF BIOLOGICAL SCIENCES (College of Arts and Sciences)",
+  "office": "College of Arts and Sciences",
+  "unit": "DEPARTMENT OF BIOLOGICAL SCIENCES",
+  "unit_abbreviation": "DBS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.850416",
+  "name": "DEPARTMENT OF COMMUNICATION (College of Arts and Sciences)",
+  "office": "College of Arts and Sciences",
+  "unit": "DEPARTMENT OF COMMUNICATION",
+  "unit_abbreviation": "DCOMM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.857005",
+  "name": "DEPARTMENT OF HUMANITIES (College of Arts and Sciences)",
+  "office": "College of Arts and Sciences",
+  "unit": "DEPARTMENT OF HUMANITIES",
+  "unit_abbreviation": "DHUM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.862366",
+  "name": "DEPARTMENT OF PHYSICAL SCIENCES (College of Arts and Sciences)",
+  "office": "College of Arts and Sciences",
+  "unit": "DEPARTMENT OF PHYSICAL SCIENCES",
+  "unit_abbreviation": "DPS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.868179",
+  "name": "DEPARTMENT OF SOCIAL SCIENCES (College of Arts and Sciences)",
+  "office": "College of Arts and Sciences",
+  "unit": "DEPARTMENT OF SOCIAL SCIENCES",
+  "unit_abbreviation": "DSS"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.874275",
+  "name": "DEAN'S OFFICE (College of Arts and Sciences)",
+  "office": "College of Arts and Sciences",
+  "unit": "DEAN'S OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.880288",
+  "name": "REGISTRAR'S OFFICE (College of Arts and Sciences)",
+  "office": "College of Arts and Sciences",
+  "unit": "REGISTRAR'S OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.886659",
+  "name": "NURSING (College of Nursing)",
+  "office": "College of Nursing",
+  "unit": "NURSING",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.892098",
+  "name": "MIDWIFERY (College of Nursing)",
+  "office": "College of Nursing",
+  "unit": "MIDWIFERY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.897512",
+  "name": "MEDICAL TECHNOLOGY (College of Nursing)",
+  "office": "College of Nursing",
+  "unit": "MEDICAL TECHNOLOGY",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-06-05 17:10:43.904106",
+  "name": "DEPARTMENT OF MANAGEMENT (College of Economics, Management and Development Studies)",
+  "office": "College of Economics, Management and Development Studies",
+  "unit": "DEPARTMENT OF MANAGEMENT",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-10-22 17:50:12.433784",
+  "name": "RECORDS OFFICE (Office of the Director for Administration)",
+  "office": "Office of the Director for Administration",
+  "unit": "RECORDS OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-10-22 17:50:26.863127",
+  "name": "SUPPLY AND PROPERTY OFFICE (Office of the Director for Administration)",
+  "office": "Office of the Director for Administration",
+  "unit": "SUPPLY AND PROPERTY OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2024-10-22 17:50:37.852322",
+  "name": "PROCUREMENT OFFICE (Office of the Director for Administration)",
+  "office": "Office of the Director for Administration",
+  "unit": "PROCUREMENT OFFICE",
+  "unit_abbreviation": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Unit",
+  "modified": "2025-02-26 09:12:04.364686",
+  "name": "LEGAL SERVICES OFFICE (Office of the University President)",
+  "office": "Office of the University President",
+  "unit": "LEGAL SERVICES OFFICE",
+  "unit_abbreviation": null
+ }
+]

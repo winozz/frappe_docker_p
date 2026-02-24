@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EMP-SR-.MM.-.YYYY.-.######",
+ "creation": "2025-06-30 13:47:34.385459",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "generate_for_gsis",
+  "employee",
+  "date",
+  "reasons_for_requesting"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "reasons_for_requesting",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason/s for Requesting",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "generate_for_gsis",
+   "fieldtype": "Check",
+   "label": "Generate for GSIS"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-01 08:09:26.123787",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "Service Record",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "date",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

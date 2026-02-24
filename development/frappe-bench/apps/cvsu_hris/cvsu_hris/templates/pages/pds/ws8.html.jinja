@@ -1,0 +1,70 @@
+<div x-data="{'entries': [] }" x-init="$watch('$store.work_experiences', (update) => { entries = update.filter((entry, indx) => !entry.is_terminal && indx >= 28) })"  x-show="entries.length">
+	<div class="page-break"></div>
+	<div class="worksheet extra-sheet" data-fit-width="true">
+		<div id="WS-E8" class="content">
+			<table id="T-E8">
+				<thead>
+					<tr>
+						<th class="H-1"></th>
+						<th class="H-2"></th>
+						<th class="H-3"></th>
+						<th class="H-4"></th>
+						<th class="H-5"></th>
+						<th class="H-6"></th>
+						<th class="H-7"></th>
+						<th class="H-8"></th>
+						<th class="H-9"></th>
+						<th class="H-10"></th>
+						<th class="H-11"></th>
+						<th class="H-12"></th>
+						<th class="H-13"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="R-1">
+						<td class="C-1" colspan="13">V. WORK EXPERIENCE</td>
+					</tr>
+					<tr class="R-2">
+						<td class="C-1" colspan="13">(Include private employment. Start from your recent work) Description of duties should be indicated in the attached Work Experience sheet.
+						</td>
+					</tr>
+					<tr class="R-3">
+						<td class="C-1">28.</td>
+						<td class="C-2" colspan="2" rowspan="2">INCLUSIVE DATES<br />(mm/dd/yyyy)</td>
+						<td class="C-4" colspan="3" rowspan="3">POSITION TITLE<br />(Write in full/Do not abbreviate)</td>
+						<td class="C-7" colspan="3" rowspan="3">DEPARTMENT / AGENCY / OFFICE / COMPANY<br />(Write in full/Do not abbreviate)</td>
+						<td class="C-10" rowspan="3">MONTHLY SALARY</td>
+						<td class="C-11" rowspan="3">SALARY/ JOB/ PAY GRADE (if applicable)& STEP (Format "00-0")/ INCREMENT</td>
+						<td class="C-12" rowspan="3">STATUS OF APPOINTMENT</td>
+						<td class="C-13" rowspan="3">GOV'T SERVICE<br />(Y/ N)</td>
+					</tr>
+					<tr class="R-4">
+						<td class="C-1"></td>
+					</tr>
+					<tr class="R-5">
+						<td class="C-1" colspan="2">From</td>
+						<td class="C-3">To</td>
+					</tr>
+					<template x-for="entry in entries">
+					<tr class="R-6">
+						<td class="C-1" colspan="2" x-text="entry.fields[0].text"></td>
+						<td class="C-3" x-text="entry.fields[1].text"></td>
+						<td class="C-4" colspan="3" x-text="entry.fields[2].text"></td>
+						<td class="C-7" colspan="3" x-text="entry.fields[3].text"></td>
+						<td class="C-10" x-text="entry.fields[4].text"></td>
+						<td class="C-11" x-text="entry.fields[5].text"></td>
+						<td class="C-12" x-text="entry.fields[6].text"></td>
+						<td class="C-13" x-text="entry.fields[7].text"></td>
+					</tr>
+					</template>
+					<tr class="R-Signature">
+						<td class="C-1" colspan="3">SIGNATURE</td>
+						<td class="C-3" colspan="5"></td>
+						<td class="C-7" colspan="2">DATE</td>
+						<td class="C-9" colspan="3"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

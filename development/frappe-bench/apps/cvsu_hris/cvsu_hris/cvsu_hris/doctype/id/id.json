@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-15 15:51:28.169161",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "id_is_primary",
+  "id_selected_type",
+  "id_other_type",
+  "id_number",
+  "id_date",
+  "id_place"
+ ],
+ "fields": [
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "id_date",
+   "fieldtype": "Date",
+   "label": "Date of Issuance",
+   "mandatory_depends_on": "eval:doc.id_is_primary"
+  },
+  {
+   "fieldname": "id_place",
+   "fieldtype": "Data",
+   "label": "Place of Issuance",
+   "length": 50,
+   "mandatory_depends_on": "eval:doc.id_is_primary"
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "id_is_primary",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Default ID"
+  },
+  {
+   "depends_on": "eval:doc.id_selected_type=='OTHERS'",
+   "fieldname": "id_other_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Other ID Type",
+   "mandatory_depends_on": "eval:doc.id_selected_type=='OTHERS'"
+  },
+  {
+   "fieldname": "id_selected_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "ID Type",
+   "options": "\nCOMPANY ID\nUMID\nPHILSYS\nGSIS\nPAG-IBIG\nPHILHEALTH\nSSS\nTIN\nPASSPORT\nDRIVER'S LICENSE\nSOLO PARENT\nPWD\nOTHERS",
+   "reqd": 1,
+   "set_only_once": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-11 10:21:35.401249",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "ID",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

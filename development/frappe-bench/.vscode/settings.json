@@ -1,0 +1,15 @@
+{
+	// When the VS Code workspace root is `frappe-bench`, Pylance needs these extra
+	// paths to resolve app packages like `accounting`, `frappe`, and `erpnext`.
+	"editor.multiCursorModifier": "alt",
+	"python.analysis.extraPaths": [
+		"${workspaceFolder}/apps/accounting",
+		"${workspaceFolder}/apps/frappe",
+		"${workspaceFolder}/apps/erpnext"
+	],
+	"python.autoComplete.extraPaths": [
+		"${workspaceFolder}/apps/accounting",
+		"${workspaceFolder}/apps/frappe",
+		"${workspaceFolder}/apps/erpnext"
+	]
+}

@@ -1,0 +1,120 @@
+<div x-data="{'entries': $store.extra_education }"   x-show="entries.length()">
+	<div class="page-break"></div>
+	<div class="worksheet extra-sheet" data-fit-width="true">
+		<div id="WS-E6" class="content">
+			<table id="T-E6">
+				<thead>
+					<tr>
+						<th class="H-1"></th>
+						<th class="H-2"></th>
+						<th class="H-3"></th>
+						<th class="H-4"></th>
+						<th class="H-5"></th>
+						<th class="H-6"></th>
+						<th class="H-7"></th>
+						<th class="H-8"></th>
+						<th class="H-9"></th>
+						<th class="H-10"></th>
+						<th class="H-11"></th>
+						<th class="H-12"></th>
+						<th class="H-13"></th>
+						<th class="H-14"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="R-1">
+						<td class="C-1" colspan="14">III. EDUCATIONAL BACKGROUND</td>
+					</tr>
+					<tr class="R-2">
+						<td class="C-1" rowspan="2">26.</td>
+						<td class="C-2" colspan="2" rowspan="3">LEVEL</td>
+						<td class="C-4" colspan="3" rowspan="3">NAME OF SCHOOL <br />(Write in full)</td>
+						<td class="C-7" colspan="3" rowspan="3">BASIC EDUCATION/DEGREE/COURSE<br />(Write in full)</td>
+						<td class="C-10" colspan="2" rowspan="2">PERIOD OF ATTENDANCE</td>
+						<td class="C-12" rowspan="3">HIGHEST LEVEL/UNITS EARNED<br />(if not graduated)</td>
+						<td class="C-13" rowspan="3">YEAR GRADUATED</td>
+						<td class="C-14" rowspan="3">SCHOLARSHIP/ ACADEMIC HONORS RECEIVED</td>
+					</tr>
+					<tr class="R-3">
+					</tr>
+					<tr class="R-4">
+						<td class="C-1"></td>
+						<td class="C-10">From</td>
+						<td class="C-11">To</td>
+					</tr>
+					<template x-for="entry in entries.elementary.slice(1)">
+						<tr class="R-5">
+							<td class="C-1"></td>
+							<td class="C-2" colspan="2">ELEMENTARY</td>
+							<td class="C-4" colspan="3" x-text="entry.fields[0].text"></td>
+							<td class="C-7" colspan="3" x-text="entry.fields[1].text"></td>
+							<td class="C-10" x-text="entry.fields[2].text"></td>
+							<td class="C-11" x-text="entry.fields[3].text"></td>
+							<td class="C-12" x-text="entry.fields[4].text"></td>
+							<td class="C-13" x-text="entry.fields[5].text"></td>
+							<td class="C-14" x-text="entry.fields[6].text"></td>
+						</tr>
+					</template>
+					<template x-for="entry in entries.secondary.slice(1)">
+						<tr class="R-6">
+							<td class="C-1"></td>
+							<td class="C-2" colspan="2">SECONDARY</td>
+							<td class="C-4" colspan="3" x-text="entry.fields[0].text"></td>
+							<td class="C-7" colspan="3" x-text="entry.fields[1].text"></td>
+							<td class="C-10" x-text="entry.fields[2].text"></td>
+							<td class="C-11" x-text="entry.fields[3].text"></td>
+							<td class="C-12" x-text="entry.fields[4].text"></td>
+							<td class="C-13" x-text="entry.fields[5].text"></td>
+							<td class="C-14" x-text="entry.fields[6].text"></td>
+						</tr>
+					</template>
+					<template x-for="entry in entries.vocational.slice(1)">
+						<tr class="R-7">
+							<td class="C-1"></td>
+							<td class="C-2" colspan="2">VOCATIONAL /<br />TRADE COURSE</td>
+							<td class="C-4" colspan="3" x-text="entry.fields[0].text"></td>
+							<td class="C-7" colspan="3" x-text="entry.fields[1].text"></td>
+							<td class="C-10" x-text="entry.fields[2].text"></td>
+							<td class="C-11" x-text="entry.fields[3].text"></td>
+							<td class="C-12" x-text="entry.fields[4].text"></td>
+							<td class="C-13" x-text="entry.fields[5].text"></td>
+							<td class="C-14" x-text="entry.fields[6].text"></td>
+						</tr>
+					</template>
+					<template x-for="entry in entries.college.slice(1)">
+						<tr class="R-8">
+							<td class="C-1"></td>
+							<td class="C-2" colspan="2">COLLEGE</td>
+							<td class="C-4" colspan="3" x-text="entry.fields[0].text"></td>
+							<td class="C-7" colspan="3" x-text="entry.fields[1].text"></td>
+							<td class="C-10" x-text="entry.fields[2].text"></td>
+							<td class="C-11" x-text="entry.fields[3].text"></td>
+							<td class="C-12" x-text="entry.fields[4].text"></td>
+							<td class="C-13" x-text="entry.fields[5].text"></td>
+							<td class="C-14" x-text="entry.fields[6].text"></td>
+						</tr>
+					</template>
+					<template x-for="entry in entries.graduate_studies.slice(1)">
+						<tr class="R-9">
+							<td class="C-1"></td>
+							<td class="C-2" colspan="2">GRADUATE STUDIES</td>
+							<td class="C-4" colspan="3" x-text="entry.fields[0].text"></td>
+							<td class="C-7" colspan="3" x-text="entry.fields[1].text"></td>
+							<td class="C-10" x-text="entry.fields[2].text"></td>
+							<td class="C-11" x-text="entry.fields[3].text"></td>
+							<td class="C-12" x-text="entry.fields[4].text"></td>
+							<td class="C-13" x-text="entry.fields[5].text"></td>
+							<td class="C-14" x-text="entry.fields[6].text"></td>
+						</tr>
+					</template>
+					<tr class="R-Signature">
+						<td class="C-1" colspan="3">SIGNATURE</td>
+						<td class="C-3" colspan="6"></td>
+						<td class="C-7" colspan="2">DATE</td>
+						<td class="C-9" colspan="3"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+{% set roles=frappe.get_all("Has Role", filters={"parent": frappe.session.user, "parenttype": "User"}, fields=["role"]) | map(attribute='role') | list %}
+
+{% if 'HR User' in roles %}
+    {% block content %}{% endblock %}    
+{% else %}
+
+    <div class="text-center">
+   
+        <img src="/assets/cvsu_hris/images/CvSU.png" style="height: 150px; margin-right:0px;">
+        <p style="color: red; font-size: 50pt; text-align: center; line-height: 1;">Access Denied</p>
+        <hr style="margin:auto;width:80%">
+        <p style="padding-top: 10px; font-size:15pt; font-family: Courier; font-weight: bold; text-align: center; line-height: 1;">You do not have permission to view this report.</p>
+     
+    </div>
+{% endif %}

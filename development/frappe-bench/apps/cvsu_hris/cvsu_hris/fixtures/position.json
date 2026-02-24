@@ -1,0 +1,1290 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.259888",
+  "name": "Administrative Aide III",
+  "position": "Administrative Aide III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.280920",
+  "name": "Administrative Officer I",
+  "position": "Administrative Officer I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.290179",
+  "name": "Administrative Officer V",
+  "position": "Administrative Officer V",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.297977",
+  "name": "Administrative Officer II",
+  "position": "Administrative Officer II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.305453",
+  "name": "Administrative Assistant II",
+  "position": "Administrative Assistant II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.312904",
+  "name": "Administrative Aide VI",
+  "position": "Administrative Aide VI",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.320313",
+  "name": "Science Research Assistant",
+  "position": "Science Research Assistant",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.328057",
+  "name": "Administrative Aide I",
+  "position": "Administrative Aide I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.336473",
+  "name": "Administrative Aide IV",
+  "position": "Administrative Aide IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.344041",
+  "name": "Research Assistant I",
+  "position": "Research Assistant I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.354194",
+  "name": "Laboratory Technician I",
+  "position": "Laboratory Technician I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.362003",
+  "name": "Laboratory Aide I",
+  "position": "Laboratory Aide I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.369503",
+  "name": "Farm Worker",
+  "position": "Farm Worker",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.377167",
+  "name": "Administrative Assistant III",
+  "position": "Administrative Assistant III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.384657",
+  "name": "Professor III",
+  "position": "Professor III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.392306",
+  "name": "Instructor I",
+  "position": "Instructor I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.399874",
+  "name": "Laboratory Aide II",
+  "position": "Laboratory Aide II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.407286",
+  "name": "Administrative Assistant I",
+  "position": "Administrative Assistant I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.414712",
+  "name": "Security Guard III",
+  "position": "Security Guard III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.421943",
+  "name": "Security Guard II",
+  "position": "Security Guard II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.429333",
+  "name": "Security Guard I",
+  "position": "Security Guard I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.437216",
+  "name": "Dormitory Manager I",
+  "position": "Dormitory Manager I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.444857",
+  "name": "Farm Worker I",
+  "position": "Farm Worker I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.452017",
+  "name": "Administrative Aide II",
+  "position": "Administrative Aide II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.459541",
+  "name": "Farm Foreman",
+  "position": "Farm Foreman",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.467230",
+  "name": "Lineman III",
+  "position": "Lineman III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.474137",
+  "name": "Planning Officer III",
+  "position": "Planning Officer III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.481840",
+  "name": "Planning Officer II",
+  "position": "Planning Officer II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.489379",
+  "name": "Administrative Officer III",
+  "position": "Administrative Officer III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.497096",
+  "name": "Planning Officer I",
+  "position": "Planning Officer I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.504523",
+  "name": "Project Development Officer II",
+  "position": "Project Development Officer II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.511969",
+  "name": "Engineer II",
+  "position": "Engineer II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.519629",
+  "name": "Project Development Officer III",
+  "position": "Project Development Officer III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.526969",
+  "name": "Administrative Officer IV",
+  "position": "Administrative Officer IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.535214",
+  "name": "Project Development Officer I",
+  "position": "Project Development Officer I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.542681",
+  "name": "Engineering Assistant I",
+  "position": "Engineering Assistant I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.550175",
+  "name": "Education Program Specialist II",
+  "position": "Education Program Specialist II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.557540",
+  "name": "Program Specialist II",
+  "position": "Program Specialist II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.565259",
+  "name": "School Farm Demonstrator",
+  "position": "School Farm Demonstrator",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.572684",
+  "name": "Laborer I",
+  "position": "Laborer I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.580960",
+  "name": "Project Development Officer",
+  "position": "Project Development Officer",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.588805",
+  "name": "Project Development Assistant",
+  "position": "Project Development Assistant",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.596237",
+  "name": "CIP Fellow",
+  "position": "CIP Fellow",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.603378",
+  "name": "Project Technical Assistant VI",
+  "position": "Project Technical Assistant VI",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.611292",
+  "name": "Project Technical Assistant IV",
+  "position": "Project Technical Assistant IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.618536",
+  "name": "Project Technical Aide VI",
+  "position": "Project Technical Aide VI",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.625865",
+  "name": "Utility Worker I",
+  "position": "Utility Worker I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.633599",
+  "name": "Statistician I",
+  "position": "Statistician I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.642878",
+  "name": "Science Research Analyst",
+  "position": "Science Research Analyst",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.650900",
+  "name": "Science Research Specialist I",
+  "position": "Science Research Specialist I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.665223",
+  "name": "Registrar III",
+  "position": "Registrar III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.672979",
+  "name": "Agricultural Technician",
+  "position": "Agricultural Technician",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.681029",
+  "name": "Agriculturist II",
+  "position": "Agriculturist II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.689279",
+  "name": "Farm Supervisor",
+  "position": "Farm Supervisor",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.697007",
+  "name": "SUC President IV",
+  "position": "SUC President IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.704702",
+  "name": "Security Officer I",
+  "position": "Security Officer I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.712308",
+  "name": "Board Secretary V",
+  "position": "Board Secretary V",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.720227",
+  "name": "Executive Assistant IV",
+  "position": "Executive Assistant IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.727923",
+  "name": "Board Secretary I",
+  "position": "Board Secretary I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.737208",
+  "name": "Security Officer II",
+  "position": "Security Officer II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.745303",
+  "name": "Farm Worker II",
+  "position": "Farm Worker II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.753413",
+  "name": "College Librarian III",
+  "position": "College Librarian III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.762085",
+  "name": "College Librarian I",
+  "position": "College Librarian I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.770687",
+  "name": "Computer Programmer I",
+  "position": "Computer Programmer I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.778660",
+  "name": "Computer Operator I",
+  "position": "Computer Operator I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.786817",
+  "name": "Internal Auditor III",
+  "position": "Internal Auditor III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.794693",
+  "name": "Internal Auditor I",
+  "position": "Internal Auditor I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.802436",
+  "name": "Internal Auditor II",
+  "position": "Internal Auditor II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.810042",
+  "name": "SUC Vice President",
+  "position": "SUC Vice President",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.818056",
+  "name": "Information Officer II",
+  "position": "Information Officer II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.826227",
+  "name": "Information Officer I",
+  "position": "Information Officer I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.835811",
+  "name": "Information Officer III",
+  "position": "Information Officer III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.844700",
+  "name": "Information Technology Officer III",
+  "position": "Information Technology Officer III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.854094",
+  "name": "Information Technology Officer I",
+  "position": "Information Technology Officer I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.863890",
+  "name": "Information System Analyst I",
+  "position": "Information System Analyst I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.872829",
+  "name": "House Parent III",
+  "position": "House Parent III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.882871",
+  "name": "Guidance Counselor III",
+  "position": "Guidance Counselor III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.892671",
+  "name": "Vocational Placement Coordinator I",
+  "position": "Vocational Placement Coordinator I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.903049",
+  "name": "Research Assisitant I",
+  "position": "Research Assisitant I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.912434",
+  "name": "Registrar I",
+  "position": "Registrar I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.921405",
+  "name": "Watchman I",
+  "position": "Watchman I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.930521",
+  "name": "Mechanic II",
+  "position": "Mechanic II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.939460",
+  "name": "Nurse II",
+  "position": "Nurse II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.949642",
+  "name": "Electrician I",
+  "position": "Electrician I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.959948",
+  "name": "Librarian I",
+  "position": "Librarian I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.969375",
+  "name": "School Librarian",
+  "position": "School Librarian",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.980622",
+  "name": "Assistant Professor I",
+  "position": "Assistant Professor I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:40.990452",
+  "name": "Assistant Professor III",
+  "position": "Assistant Professor III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.001110",
+  "name": "Assistant Professor II",
+  "position": "Assistant Professor II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.011172",
+  "name": "Instructor III",
+  "position": "Instructor III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.019590",
+  "name": "Associate Professor III",
+  "position": "Associate Professor III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.027413",
+  "name": "Assistant Professor IV",
+  "position": "Assistant Professor IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.034635",
+  "name": "Associate Professor IV",
+  "position": "Associate Professor IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.042133",
+  "name": "Associate Professor V",
+  "position": "Associate Professor V",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.050035",
+  "name": "Associate Professor II",
+  "position": "Associate Professor II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.057802",
+  "name": "Instructor II",
+  "position": "Instructor II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.065366",
+  "name": "Associate Professor I",
+  "position": "Associate Professor I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.072748",
+  "name": "Professor I",
+  "position": "Professor I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.080298",
+  "name": "Nurse I",
+  "position": "Nurse I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.088316",
+  "name": "Data Encoder",
+  "position": "Data Encoder",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.096392",
+  "name": "College Librarian II",
+  "position": "College Librarian II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.104536",
+  "name": "Senior Administrative Assistant III",
+  "position": "Senior Administrative Assistant III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.112453",
+  "name": "Instructor l",
+  "position": "Instructor l",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.119959",
+  "name": "Instructor I \\ Admin Aide III",
+  "position": "Instructor I \\ Admin Aide III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.127724",
+  "name": "Instructor I \\ Laboratory Technician I",
+  "position": "Instructor I \\ Laboratory Technician I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.137023",
+  "name": "Professor VI",
+  "position": "Professor VI",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.144756",
+  "name": "University Professor",
+  "position": "University Professor",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.152662",
+  "name": "Accountant III",
+  "position": "Accountant III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.161573",
+  "name": "CIP Graduate Fellow",
+  "position": "CIP Graduate Fellow",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.169255",
+  "name": "Home Management Technologist",
+  "position": "Home Management Technologist",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.176666",
+  "name": "Project Technical Assistant I",
+  "position": "Project Technical Assistant I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.185136",
+  "name": "Project Technical Assistant III",
+  "position": "Project Technical Assistant III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.192539",
+  "name": "University Veterinarian",
+  "position": "University Veterinarian",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.200655",
+  "name": "Professor II",
+  "position": "Professor II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.208093",
+  "name": "Professor V",
+  "position": "Professor V",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.216155",
+  "name": "Professor IV",
+  "position": "Professor IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.223894",
+  "name": "Dentist II",
+  "position": "Dentist II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.231526",
+  "name": "Medical Technologist I",
+  "position": "Medical Technologist I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.239220",
+  "name": "Medical Officer III",
+  "position": "Medical Officer III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.246901",
+  "name": "Radiologic Technologist I",
+  "position": "Radiologic Technologist I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.254614",
+  "name": "Laboratory Technician II",
+  "position": "Laboratory Technician II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.262354",
+  "name": "Administrative Assistant V",
+  "position": "Administrative Assistant V",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.270062",
+  "name": "Supervising Administrative Officer",
+  "position": "Supervising Administrative Officer",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.278182",
+  "name": "Chief Administrative Officer",
+  "position": "Chief Administrative Officer",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-06-24 15:28:41.286639",
+  "name": "Accounting Clerk",
+  "position": "Accounting Clerk",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-08-20 15:01:17.891224",
+  "name": "House Parent I",
+  "position": "House Parent I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-08-20 15:01:33.159209",
+  "name": "House Parent II",
+  "position": "House Parent II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-08-20 15:02:01.867633",
+  "name": "Attorney I",
+  "position": "Attorney I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-08-20 15:02:12.231403",
+  "name": "Attorney II",
+  "position": "Attorney II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-08-20 15:02:25.390957",
+  "name": "Attorney III",
+  "position": "Attorney III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-08-20 15:02:37.470740",
+  "name": "Cook I",
+  "position": "Cook I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-07 15:17:28.472443",
+  "name": "Information Technology Officer II",
+  "position": "Information Technology Officer II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 08:57:20.621917",
+  "name": "Project Technical Aide III",
+  "position": "Project Technical Aide III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:50:04.389563",
+  "name": "Project Technical Specialist I",
+  "position": "Project Technical Specialist I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:58:30.151839",
+  "name": "Project Technical Specialist II",
+  "position": "Project Technical Specialist II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:58:36.505638",
+  "name": "Project Technical Specialist III",
+  "position": "Project Technical Specialist III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:58:43.390621",
+  "name": "Project Technical Specialist IV",
+  "position": "Project Technical Specialist IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:58:47.967097",
+  "name": "Project Technical Specialist V",
+  "position": "Project Technical Specialist V",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:58:52.990163",
+  "name": "Project Technical Specialist VI",
+  "position": "Project Technical Specialist VI",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:59:09.673225",
+  "name": "Project Technical Assistant II",
+  "position": "Project Technical Assistant II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:59:22.616004",
+  "name": "Project Technical Assistant V",
+  "position": "Project Technical Assistant V",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:59:41.706608",
+  "name": "Project Technical Aide I",
+  "position": "Project Technical Aide I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:59:46.855725",
+  "name": "Project Technical Aide II",
+  "position": "Project Technical Aide II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:59:54.938307",
+  "name": "Project Technical Aide IV",
+  "position": "Project Technical Aide IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2024-10-22 15:59:59.743201",
+  "name": "Project Technical Aide V",
+  "position": "Project Technical Aide V",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-02-26 09:10:34.499371",
+  "name": "Legal Assistant I",
+  "position": "Legal Assistant I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-02-26 09:10:39.549469",
+  "name": "Legal Assistant II",
+  "position": "Legal Assistant II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-02-26 09:10:43.717066",
+  "name": "Legal Assistant III",
+  "position": "Legal Assistant III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-26 11:00:43.928507",
+  "name": "Draftsman I",
+  "position": "Draftsman I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-26 11:00:48.734049",
+  "name": "Draftsman II",
+  "position": "Draftsman II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-26 11:00:53.213866",
+  "name": "Draftsman III",
+  "position": "Draftsman III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-28 16:43:16.268278",
+  "name": "Records Officer I",
+  "position": "Records Officer I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-28 16:43:27.782664",
+  "name": "Clerk I",
+  "position": "Clerk I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-28 16:43:32.580950",
+  "name": "Clerk II",
+  "position": "Clerk II",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-28 16:43:37.301687",
+  "name": "Clerk III",
+  "position": "Clerk III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-28 16:43:41.751513",
+  "name": "Clerk IV",
+  "position": "Clerk IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-28 16:43:53.249937",
+  "name": "Guidance Counselor I",
+  "position": "Guidance Counselor I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-05-29 13:23:50.876037",
+  "name": "Instructor IV",
+  "position": "Instructor IV",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-06-03 10:06:04.242624",
+  "name": "Nurse III",
+  "position": "Nurse III",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-06-03 14:13:17.082418",
+  "name": "Research Specialist I",
+  "position": "Research Specialist I",
+  "salary_grade": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Position",
+  "modified": "2025-07-01 14:47:22.991947",
+  "name": "Draftsman IV",
+  "position": "Draftsman IV",
+  "salary_grade": null
+ }
+]

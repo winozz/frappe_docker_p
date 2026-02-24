@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-19 08:29:49.805199",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "training_program_title",
+  "training_program_inclusive_dates_attendance_from",
+  "training_program_inclusive_dates_attendance_to",
+  "training_program_number_hours",
+  "training_program_ld_type",
+  "training_program_sponsored_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "training_program_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title of Learning and Development Interventions/Training Programs (Write in full)",
+   "length": 400,
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_program_inclusive_dates_attendance_from",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Inclusive Dates of Attendance (From)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_program_inclusive_dates_attendance_to",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Inclusive Dates of Attendance (To)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_program_ld_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type of LD  (Managerial/ Supervisory/Technical/etc) ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_program_sponsored_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Conducted/Sponsored By (Write in full)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "training_program_number_hours",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Hours",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-15 16:53:55.112944",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "Training Programs Attended",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,58 @@
+<div x-data="{'entries': [] }" x-init="$watch('$store.voluntary_works', (update) => { entries = update.filter((entry, indx) => !entry.is_terminal && indx >= 7) })"  x-show="entries.length">
+	<div class="page-break"></div>
+	<div class="worksheet extra-sheet" data-fit-width="true">
+		<div id="WS-E9" class="content">
+			<table id="T-E9">
+				<thead>
+					<tr>
+						<th class="H-1"></th>
+						<th class="H-2"></th>
+						<th class="H-3"></th>
+						<th class="H-4"></th>
+						<th class="H-5"></th>
+						<th class="H-6"></th>
+						<th class="H-7"></th>
+						<th class="H-8"></th>
+						<th class="H-9"></th>
+						<th class="H-10"></th>
+						<th class="H-11"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="R-1">
+						<td class="C-1" colspan="11">VI. VOLUNTARY WORK OR INVOLVEMENT IN CIVIC / NON-GOVERNMENT / PEOPLE / VOLUNTARY ORGANIZATION/S</td>
+					</tr>
+					<tr class="R-2">
+						<td class="C-1" rowspan="2">29.</td>
+						<td class="C-2" colspan="3" rowspan="3">NAME & ADDRESS OF ORGANIZATION<br />(Write infull)</td>
+						<td class="C-5" colspan="2" rowspan="2">INCLUSIVE DATES<br />(mm/dd/yyyy)</td>
+						<td class="C-7" rowspan="3">NUMBER OF HOURS</td>
+						<td class="C-8" colspan="4" rowspan="3">POSITION / NATURE OF WORK</td>
+					</tr>
+					<tr class="R-3">
+					</tr>
+					<tr class="R-4">
+						<td class="C-1"></td>
+						<td class="C-5">From</td>
+						<td class="C-6">To</td>
+					</tr>
+					<template x-for="entry in entries">
+					<tr class="R-5">
+						<td class="C-1" colspan="4" x-text="entry.fields[0].text"></td>
+						<td class="C-5" x-text="entry.fields[1].text"></td>
+						<td class="C-6" x-text="entry.fields[2].text"></td>
+						<td class="C-7" x-text="entry.fields[3].text"></td>
+						<td class="C-8" colspan="4" x-text="entry.fields[4].text"></td>
+					</tr>
+					</template>
+					<tr class="R-Signature">
+						<td class="C-1" colspan="3">SIGNATURE</td>
+						<td class="C-3" colspan="3"></td>
+						<td class="C-7" colspan="2">DATE</td>
+						<td class="C-9" colspan="3"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

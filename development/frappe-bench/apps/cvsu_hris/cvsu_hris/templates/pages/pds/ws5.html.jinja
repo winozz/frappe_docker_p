@@ -1,0 +1,48 @@
+<div x-data="{'entries': [] }" x-init="$watch('$store.children', (update) => { entries = update.filter((entry, indx) => !entry.is_terminal && indx >= 12) })"  x-show="entries.length">
+	<div class="page-break"></div>
+	<div class="worksheet extra-sheet" data-fit-width="true">
+		<div id="WS-E5" class="content">
+			<table id="T-E5">
+				<thead>
+					<tr>
+						<th class="H-1"></th>
+						<th class="H-2"></th>
+						<th class="H-3"></th>
+						<th class="H-4"></th>
+						<th class="H-5"></th>
+						<th class="H-6"></th>
+						<th class="H-7"></th>
+						<th class="H-8"></th>
+						<th class="H-9"></th>
+						<th class="H-10"></th>
+						<th class="H-11"></th>
+						<th class="H-12"></th>
+						<th class="H-13"></th>
+						<th class="H-14"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="R-1">
+						<td class="C-1" colspan="14">II.  FAMILY BACKGROUND</td>
+					</tr>
+					<tr class="R-2">
+						<td class="C-1" colspan="10">23. NAME of CHILDREN  (Write full name and list all)</td>
+						<td class="C-11" colspan="4">DATE OF BIRTH<br/>(mm/dd/yyyy)</td>
+					</tr>
+					<template x-for="entry in entries">
+					<tr class="R-3">
+						<td class="C-1 c-value" colspan="10" x-text="entry.fields[0].text"></td>
+						<td class="C-11 c-value" colspan="4" x-text="entry.fields[1].text"></td>
+					</tr>
+					</template>
+					<tr class="R-Signature">
+						<td class="C-1" colspan="3">SIGNATURE</td>
+						<td class="C-3" colspan="4"></td>
+						<td class="C-7" colspan="3">DATE</td>
+						<td class="C-9" colspan="4"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

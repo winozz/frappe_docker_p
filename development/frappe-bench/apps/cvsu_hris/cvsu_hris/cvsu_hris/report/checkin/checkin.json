@@ -1,0 +1,46 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2025-02-17 14:31:02.834065",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "date_from",
+   "fieldtype": "Date",
+   "label": "Date From",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "date_to",
+   "fieldtype": "Date",
+   "label": "Date To",
+   "mandatory": 1,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-02-26 09:02:42.878722",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "Checkin",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "\t    WITH RECURSIVE dates(datein) AS (\r\n            SELECT %(date_from)s AS datein\r\n            UNION ALL\r\n            SELECT DATE_ADD(datein, INTERVAL 1 DAY) \r\n            FROM dates \r\n            WHERE datein < %(date_to)s\r\n        )\r\n        SELECT \r\n            DATE_FORMAT(dates.datein, '%%d') AS Date,\r\n            emp.employee_name AS \"Employee Name\",\r\n            emp.custom_office AS \"Office\",\r\n            emp.custom_category AS \"Category\",\r\n            emp.custom_employment_status AS \"Employment Status\",\r\n            emp.status AS \"Status\", \r\n            (SELECT TIME_FORMAT(TIME(time), '%%h:%%i %%p')\r\n                FROM `tabEmployee Checkin`\r\n                WHERE log_type = 'IN'\r\n                AND custom_is_break = 0\r\n                AND employee = emp.employee\r\n                AND DATE(time) = dates.datein\r\n                LIMIT 1) AS \"Time in\",\r\n            (SELECT TIME_FORMAT(TIME(time), '%%h:%%i %%p')\r\n                FROM `tabEmployee Checkin`\r\n                WHERE log_type = 'OUT'\r\n                AND custom_is_break = 1\r\n                AND employee = emp.employee\r\n                AND DATE(time) = dates.datein\r\n                ORDER BY time DESC\r\n                LIMIT 1) AS \"Break out\",\r\n            (SELECT TIME_FORMAT(TIME(time), '%%h:%%i %%p')\r\n                FROM `tabEmployee Checkin`\r\n                WHERE log_type = 'IN'\r\n                AND custom_is_break = 1\r\n                AND employee = emp.employee\r\n                AND DATE(time) = dates.datein\r\n                LIMIT 1) AS \"Break in\",\r\n            (SELECT TIME_FORMAT(TIME(time), '%%h:%%i %%p')\r\n                FROM `tabEmployee Checkin`\r\n                WHERE log_type = 'OUT'\r\n                AND custom_is_break = 0\r\n                AND employee = emp.employee\r\n                AND DATE(time) = dates.datein\r\n                ORDER BY time DESC\r\n                LIMIT 1) AS \"Time out\",\r\n            \"\" AS Total\r\n        FROM \r\n            `tabEmployee` AS emp\r\n        CROSS JOIN \r\n            dates\r\n        ORDER BY \r\n            emp.employee_name, dates.datein",
+ "ref_doctype": "Employee",
+ "report_name": "Checkin",
+ "report_script": "",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "HR User"
+  }
+ ]
+}

@@ -1,0 +1,398 @@
+<div class="worksheet" data-fit-width="true" data-fit-height="true" x-data="{children: $store.children, elementary: $store.elementary, secondary: $store.secondary,vocational: $store.vocational, college: $store.college, graduate_studies: $store.graduate_studies}">
+    <div id="WS-C1" class="content">
+        <table id="T-C1">
+            <thead>
+                <tr>
+                    <th class="H-1"></th>
+                    <th class="H-2"></th>
+                    <th class="H-3"></th>
+                    <th class="H-4"></th>
+                    <th class="H-5"></th>
+                    <th class="H-6"></th>
+                    <th class="H-7"></th>
+                    <th class="H-8"></th>
+                    <th class="H-9"></th>
+                    <th class="H-10"></th>
+                    <th class="H-11"></th>
+                    <th class="H-12"></th>
+                    <th class="H-13"></th>
+                    <th class="H-14"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="R-1">
+                    <td class="C-1" colspan="14"></td>
+                </tr>
+                <tr class="R-2">
+                    <td class="C-1" colspan="2" rowspan="2">CS Form No. 212<br/>Revised 2025</td>
+                    <td class="C-3" colspan="12"></td>
+                </tr>
+                <tr class="R-3">
+					<td class="C-3" colspan="11">PERSONAL DATA SHEET</td>
+					<td class="C-14"></td>
+				</tr>
+                <tr class="R-4">
+                    <td class="C-1" colspan="14">WARNING: Any misrepresentation made in the Personal Data Sheet and the Work Experience Sheet shall cause the filing of administrative/criminal case/s against the person concerned.</td>
+                </tr>
+                <tr class="R-5">
+                    <td class="C-1" colspan="14">READ THE ATTACHED GUIDE TO FILLING OUT THE PERSONAL DATA SHEET (PDS) BEFORE ACCOMPLISHING THE PDS FORM.</td>
+                </tr>
+                <tr class="R-7">
+                    <td class="C-1" colspan="14">Print legibly if accomplished through own handwriting. Tick appropriate boxes  (&#9744;) and use separate sheet if necessary. Indicate N/A if not applicable.  <b>DO NOT ABBREVIATE<b>.<td>
+                </tr>
+                <tr class="R-8">
+                    <td class="C-1" colspan="14"></td>
+                </tr>
+                <tr class="R-9">
+                    <td class="C-1" colspan="14">I. PERSONAL INFORMATION</td>
+                </tr>
+                <tr class="R-10">
+                    <td class="C-1">1. </td>
+                    <td class="C-2" colspan="2">SURNAME</td>
+                    <td class="C-4 c-value" colspan="11">{{ doc.last_name | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-11">
+                    <td class="C-1">2.</td>
+                    <td class="C-2" colspan="2">FIRST NAME</td>
+                    <td class="C-4 c-value" colspan="8">{{ doc.first_name | default('n/a', true) | upper}}</td>
+                    <td class="C-12 c-value" colspan="3">NAME EXTENSION (JR., SR)<br /><strong>{{ doc.custom_name_extension | default('n/a', true) | upper}}</strong></td>
+                </tr>
+                <tr class="R-12">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">MIDDLE NAME</td>
+                    <td class="C-4 c-value" colspan="11">{{ doc.middle_name | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-13">
+                    <td class="C-1">3. </td>
+                    <td class="C-2" colspan="2">DATE OF BIRTH<br/>(dd/mm/yyyy)</td>
+                    <td class="C-4 c-value" colspan="3">{{ frappe.utils.get_datetime(doc.date_of_birth).strftime('%d/%m/%Y') if doc.date_of_birth else 'N/A' }}</td>
+                    <td class="C-7" colspan="3">16. CITIZENSHIP</td>
+                    <td class="C-10" colspan="2">{{show_checkbox('Filipino',doc.custom_citizenship=='Filipino')}}</td>
+                    <td class="C-11" colspan="3">{{show_checkbox('Dual Citizenship',doc.custom_citizenship=='Dual Citizenship')}}</td>
+                </tr>
+                <tr class="R-14">
+                    <td class="C-1" colspan="3"></td>
+                    <td class="C-4" colspan="3"></td>
+                    <td class="C-7" colspan="3"></td>
+                    <td class="C-10" colspan="3">{{show_checkbox('by birth',doc.custom_dual_citizenship_type=='by birth')}}</td>
+                    <td class="C-11" colspan="3">{{show_checkbox('by naturalization',doc.custom_dual_citizenship_type=='by naturalization')}}</td>
+                    <td class="C-12 c-value"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-15">
+					<td class="C-1">4. </td>
+					<td class="C-2" colspan="2">PLACE OF BIRTH</td>
+					<td class="C-4" colspan="3">{{ doc.custom_place_of_birth | default('n/a', true) | upper}}</td>
+					<td class="C-7" colspan="3">If holder of  dual citizenship,</td>
+					<td class="C-10" colspan="2"></td>
+					<td class="C-12" colspan="3">Pls. indicate country:</td>
+				</tr>
+                <tr class="R-16">
+                    <td class="C-1">5. </td>
+                    <td class="C-2" colspan="2">SEX</td>
+					<td class="C-4 colspan">{{show_checkbox('Male',doc.gender=='Male')}}</td>
+                    <td class="C-5" colspan="2">{{show_checkbox('Female',doc.gender=='Female')}}</td>
+                    <td class="C-7" colspan="3">please indicate the details.</td>
+                    <td class="C-10 c-value" colspan="5">{{ doc.custom_dual_citizenship_country | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-17">
+                    <td class="C-1" rowspan="2">6. </td>
+                    <td class="C-2" colspan="2" rowspan="2">CIVIL STATUS</td>
+                    <td class="C-4 c-value">{{show_checkbox('Single',doc.custom_civil_status=='Single')}}</td>
+                    <td class="C-5" colspan="2">{{show_checkbox('Married',doc.custom_civil_status=='Married')}}</td>
+                    <td class="C-7" colspan="2" rowspan="7">17. RESIDENTIAL ADDRESS</td>
+                    <td class="C-9 c-value" colspan="3">{{ doc.custom_residential_house_block_lot_number | default('n/a', true) | upper}}</td>
+                    <td class="C-12 c-value" colspan="3">{{ doc.custom_residential_street | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-18">
+                    <td class="C-4">{{show_checkbox('Widowed',doc.custom_civil_status=='Widowed')}}</td>
+                    <td class="C-5" colspan="2">{{show_checkbox('Separated',doc.custom_civil_status=='Separated')}}</td>
+                    <td class="C-9" colspan="3">House/Block/Lot No.</td>
+                    <td class="C-12" colspan="3">Street</td>
+                </tr>
+                <tr class="R-19">
+                    <td class="C-1" colspan="3" rowspan="3"></td>
+                    <td class="C-4">{{show_checkbox('Other/s: ',doc.custom_civil_status=='Others')}} <b>{{ doc.custom_civil_status_others | upper if doc.custom_civil_status=='Others'}}</b></td>
+                    <td class="C-5"></td>
+                    <td class="C-6"></td>
+                    <td class="C-9 c-value" colspan="3" rowspan="2">{{ doc.custom_residential_subdivision_village | default('n/a', true) | upper}}</td>
+                    <td class="C-12 c-value" colspan="3" rowspan="2">{{ doc.custom_residential_barangay | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-20">
+                    <td class="C-4"></td>
+                    <td class="C-5"></td>
+                    <td class="C-6"></td>
+                </tr>
+                <tr class="R-21">
+                    <td class="C-4"></td>
+                    <td class="C-5"></td>
+                    <td class="C-6"></td>
+                    <td class="C-9" colspan="3">Subdivision/Village</td>
+                    <td class="C-12" colspan="3">Barangay</td>
+                </tr>
+                <tr class="R-22">
+                    <td class="C-1" rowspan="2">7. </td>
+                    <td class="C-2" colspan="2" rowspan="2">HEIGHT (m)</td>
+                    <td class="C-4 c-value" colspan="3" rowspan="2">{{ doc.custom_height | default('n/a', true) | upper}}</td>
+                    <td class="C-9 c-value" colspan="3">{{ doc.custom_residential_city_municipality | default('n/a', true) | upper}}</td>
+                    <td class="C-12 c-value" colspan="3">{{ doc.custom_residential_province | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-23">
+                    <td class="C-9" colspan="3">City/Municipality</td>
+                    <td class="C-12" colspan="3">Province</td>
+                </tr>
+                <tr class="R-24">
+                    <td class="C-1">8. </td>
+                    <td class="C-2" colspan="2">WEIGHT (kg)</td>
+                    <td class="C-4 c-value" colspan="3">{{ doc.custom_weight | default('n/a', true) | upper}}</td>
+                    <td class="C-7" colspan="2">ZIP CODE</td>
+                    <td class="C-9 c-value" colspan="6">{{ doc.custom_residential_zip_code | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-25">
+                    <td class="C-1" rowspan="2">9.</td>
+                    <td class="C-2" colspan="2" rowspan="2">BLOOD TYPE</td>
+                    <td class="C-4 c-value" colspan="3" rowspan="2">{{ doc.blood_group | default('n/a', true) | upper}}</td>
+                    <td class="C-7" colspan="2" rowspan="6">18. PERMANENT ADDRESS</td>
+                    <td class="C-9 c-value" colspan="3">{{ doc.custom_permanent_house_block_lot_number | default('n/a', true) | upper}}</td>
+                    <td class="C-12 c-value" colspan="3">{{ doc.custom_permanent_street | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-26">
+                    <td class="C-9" colspan="3">House/Block/Lot No.</td>
+                    <td class="C-12" colspan="3">Street</td>
+                </tr>
+                <tr class="R-27">
+                    <td class="C-1" rowspan="2">10.</td>
+                    <td class="C-2" colspan="2" rowspan="2">UMID ID NO.</td>
+                    <td class="C-4 c-value" colspan="3" rowspan="2"></td>
+                    <td class="C-9 c-value" colspan="3">{{ doc.custom_permanent_subdivision_village | default('n/a', true) | upper}}</td>
+                    <td class="C-12 c-value" colspan="3">{{ doc.custom_permanent_barangay | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-28">
+                    <td class="C-9" colspan="3">Subdivision/Village</td>
+                    <td class="C-12" colspan="3">Barangay</td>
+                </tr>
+                <tr class="R-29">
+                    <td class="C-1" rowspan="2">11.</td>
+                    <td class="C-2" colspan="2" rowspan="2">PAG-IBIG ID NO.</td>
+                    <td class="C-4 c-value" colspan="3" rowspan="2"></td>
+                    <td class="C-9 c-value" colspan="3">{{ doc.custom_permanent_city_municipality | default('n/a', true) | upper}}</td>
+                    <td class="C-12 c-value" colspan="3">{{ doc.custom_permanent_province | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-30">
+                    <td class="C-9" colspan="3">City/Municipality</td>
+                    <td class="C-12" colspan="3">Province</td>
+                </tr>
+                <tr class="R-31">
+                    <td class="C-1">12.</td>
+                    <td class="C-2" colspan="2">PHILHEALTH NO.</td>
+                    <td class="C-4 c-value" colspan="3"></td>
+                    <td class="C-7" colspan="2">ZIP CODE</td>
+                    <td class="C-9 c-value" colspan="6">{{ doc.custom_permanent_zip_code | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-32">
+                    <td class="C-1">13.</td>
+                    <td class="C-2" colspan="2">PhilSys Number (PSN)</td>
+                    <td class="C-4 c-value" colspan="3"></td>
+                    <td class="C-7" colspan="2">19. TELEPHONE NO.</td>
+                    <td class="C-9 c-value" colspan="6">{{ doc.custom_telephone_no | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-33">
+                    <td class="C-1" colspan="3">14. TIN NO.</td>
+                    <td class="C-4 c-value" colspan="3"></td>
+                    <td class="C-7" colspan="2">20. MOBILE NO.</td>
+                    <td class="C-9 c-value" colspan="6">{{ doc.cell_number | default('n/a', true) | upper}}</td>
+                </tr>
+                <tr class="R-34">
+                    <td class="C-1" colspan="3">15. AGENCY EMPLOYEE NO.</td>
+                    <td class="C-4 c-value" colspan="3">{{ doc.employee_number | default('n/a', true) | upper}}</td>
+                    <td class="C-7" colspan="2">21. E-MAIL ADDRESS (if any)</td>
+                    <td class="C-9 c-value" colspan="6">{{ doc.company_email | default('N/A', true)}}</td>
+                </tr>
+                <tr class="R-35">
+                    <td class="C-1" colspan="14">II.  FAMILY BACKGROUND</td>
+                </tr>
+                <tr class="R-36">
+                    <td class="C-1">22.</td>
+                    <td class="C-2" colspan="2">SPOUSE'S SURNAME</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4">23. NAME of CHILDREN  (Write full name and list all)</td>
+                    <td class="C-13" colspan="2">DATE OF BIRTH<br/>(dd/mm/yyyy)</td>
+                </tr>
+                <tr class="R-37">
+                    <td class="C-1" rowspan="2"></td>
+                    <td class="C-2" colspan="2">FIRST NAME</td>
+                    <td class="C-4 c-value" colspan="3"></td>
+                    <td class="C-7 c-value" colspan="2">NAME EXTENSION (JR., SR)<br /></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-38">
+                    <td class="C-2" colspan="2">MIDDLE NAME</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-39">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">OCCUPATION</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-40">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">EMPLOYER/BUSINESS NAME</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-41">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">BUSINESS ADDRESS</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-42">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">TELEPHONE NO.</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-43">
+                    <td class="C-1">24.</td>
+                    <td class="C-2" colspan="2">FATHER'S SURNAME</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-44">
+                    <td class="C-1" rowspan="2"></td>
+                    <td class="C-2" colspan="2">FIRST NAME</td>
+                    <td class="C-4 c-value" colspan="3"></td>
+                    <td class="C-7 c-value" colspan="2">NAME EXTENSION (JR., SR)<br /></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-45">
+                    <td class="C-2" colspan="2">MIDDLE NAME</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-46">
+                    <td class="C-1">25.</td>
+                    <td class="C-2" colspan="7">MOTHER'S MAIDEN NAME</td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-47">
+                    <td class="C-1" rowspan="3"></td>
+                    <td class="C-2" colspan="2">SURNAME</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-48">
+                    <td class="C-2" colspan="2">FIRST NAME</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="4"></td>
+                    <td class="C-13" colspan="2"></td>
+                </tr>
+                <tr class="R-49">
+                    <td class="C-2" colspan="2">MIDDLE NAME</td>
+                    <td class="C-4 c-value" colspan="5"></td>
+                    <td class="C-9" colspan="6">(Continue on separate sheet if necessary)</td>
+                </tr>
+                <tr class="R-50">
+                    <td class="C-1" colspan="14">III.  EDUCATIONAL BACKGROUND</td>
+                </tr>
+                <tr class="R-51">
+                    <td class="C-1" rowspan="2">26.</td>
+                    <td class="C-2" colspan="2" rowspan="3">LEVEL</td>
+                    <td class="C-4" colspan="3" rowspan="3">NAME OF SCHOOL <br/>(Write in full)</td>
+                    <td class="C-7" colspan="3" rowspan="3">BASIC EDUCATION/DEGREE/COURSE<br/>(Write in full)</td>
+                    <td class="C-10" colspan="2" rowspan="2">PERIOD OF ATTENDANCE</td>
+                    <td class="C-12" rowspan="3">HIGHEST LEVEL/UNITS EARNED<br/>(if not graduated)</td>
+                    <td class="C-13" rowspan="3">YEAR GRADUATED</td>
+                    <td class="C-14" rowspan="3">SCHOLARSHIP/ ACADEMIC HONORS RECEIVED</td>
+                </tr>
+                <tr class="R-52">
+                </tr>
+                <tr class="R-53">
+                    <td class="C-1"></td>
+                    <td class="C-10">From</td>
+                    <td class="C-11">To</td>
+                </tr>
+                <tr class="R-54">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">ELEMENTARY</td>
+                    <td class="C-4" colspan="3"></td>
+                    <td class="C-7" colspan="3"></td>
+                    <td class="C-10"></td>
+                    <td class="C-11"></td>
+                    <td class="C-12"></td>
+                    <td class="C-13"></td>
+                    <td class="C-14"></td>
+                </tr>
+                <tr class="R-55">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">SECONDARY</td>
+                    <td class="C-4" colspan="3"></td>
+                    <td class="C-7" colspan="3"></td>
+                    <td class="C-10"></td>
+                    <td class="C-11"></td>
+                    <td class="C-12"></td>
+                    <td class="C-13"></td>
+                    <td class="C-14"></td>
+                </tr>
+                <tr class="R-56">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">VOCATIONAL /<br/>TRADE COURSE</td>
+                    <td class="C-4" colspan="3"></td>
+                    <td class="C-7" colspan="3"></td>
+                    <td class="C-10"></td>
+                    <td class="C-11"></td>
+                    <td class="C-12"></td>
+                    <td class="C-13"></td>
+                    <td class="C-14"></td>
+                </tr>
+                <tr class="R-57">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">COLLEGE</td>
+                    <td class="C-4" colspan="3"></td>
+                    <td class="C-7" colspan="3"></td>
+                    <td class="C-10"></td>
+                    <td class="C-11"></td>
+                    <td class="C-12"></td>
+                    <td class="C-13"></td>
+                    <td class="C-14"></td>
+                </tr>
+                <tr class="R-58">
+                    <td class="C-1"></td>
+                    <td class="C-2" colspan="2">GRADUATE STUDIES</td>
+                    <td class="C-4" colspan="3"></td>
+                    <td class="C-7" colspan="3"></td>
+                    <td class="C-10"></td>
+                    <td class="C-11"></td>
+                    <td class="C-12"></td>
+                    <td class="C-13"></td>
+                    <td class="C-14"></td>
+                </tr>
+                <tr class="R-59">
+                    <td class="C-1" colspan="14">(Continue on separate sheet if necessary)</td>
+                </tr>
+                <tr class="R-60">
+                    <td class="C-1" colspan="3">SIGNATURE</td>
+                    <td class="C-4" colspan="6"></td>
+                    <td class="C-10" colspan="2">DATE</td>
+                    <td class="C-12" colspan="3"></td>
+                </tr>
+                <tr class="R-61">
+                    <td class="C-1" colspan="14">CS FORM 212 (Revised 2025), Page 1 of 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

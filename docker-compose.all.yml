@@ -1,0 +1,157 @@
+version: "3.8"
+
+services:
+  # MariaDB Database for Frappe
+  mariadb:
+    image: mariadb:11.8
+    container_name: frappe_mariadb
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --skip-character-set-client-handshake
+      - --skip-innodb-read-only-compressed
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-123}
+      MARIADB_AUTO_UPGRADE: 1
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    ports:
+      - "${MARIADB_HOST_PORT:-3307}:3306"
+    networks:
+      - frappe-network
+    restart: unless-stopped
+
+  # Redis Cache
+  redis-cache:
+    image: redis:alpine
+    container_name: frappe_redis_cache
+    networks:
+      - frappe-network
+    restart: unless-stopped
+
+  # Redis Queue
+  redis-queue:
+    image: redis:alpine
+    container_name: frappe_redis_queue
+    networks:
+      - frappe-network
+    restart: unless-stopped
+
+  # Frappe Bench Container
+  frappe:
+    image: frappe/bench:latest
+    container_name: frappe_bench
+    command: 
+      - /bin/bash
+      - -c
+      - |
+        set -e
+        cd /workspace/development
+        if [ ! -d "frappe-bench" ]; then
+          echo "Initializing new Frappe bench..."
+          bench init --skip-redis-config-generation --frappe-branch version-15 frappe-bench
+        fi
+        cd frappe-bench
+        CUSTOM_APP_REPO="${CUSTOM_APP_REPO:-https://github.com/winozz/ais-template.git}"
+        CUSTOM_APP_BRANCH="${CUSTOM_APP_BRANCH:-}"
+        CUSTOM_APP_NAME="${CUSTOM_APP_NAME:-ais_template}"
+        if [ ! -d "apps/${CUSTOM_APP_NAME}" ]; then
+          echo "Adding custom app ${CUSTOM_APP_NAME} from ${CUSTOM_APP_REPO} ${CUSTOM_APP_BRANCH:+(branch ${CUSTOM_APP_BRANCH})}..."
+          if [ -n "${CUSTOM_APP_BRANCH}" ]; then
+            bench get-app --branch "${CUSTOM_APP_BRANCH}" "${CUSTOM_APP_REPO}"
+          else
+            bench get-app "${CUSTOM_APP_REPO}"
+          fi
+        else
+          echo "Custom app ${CUSTOM_APP_NAME} already present, skipping get-app."
+        fi
+        echo "Bench initialization complete"
+        sleep infinity
+    environment:
+      - SHELL=/bin/bash
+      - CUSTOM_APP_REPO=${CUSTOM_APP_REPO:-https://github.com/winozz/ais-template.git}
+      - CUSTOM_APP_BRANCH=${CUSTOM_APP_BRANCH:-}
+      - CUSTOM_APP_NAME=${CUSTOM_APP_NAME:-ais_template}
+    volumes:
+      - .:/workspace:cached
+    working_dir: /workspace/development
+    ports:
+      - "${FRAPPE_PORT_8000:-8000}:8000"
+      - "${FRAPPE_PORT_8001:-8001}:8001"
+      - "${FRAPPE_PORT_8002:-8002}:8002"
+      - "${FRAPPE_PORT_8003:-8003}:8003"
+      - "${FRAPPE_PORT_8004:-8004}:8004"
+      - "${FRAPPE_PORT_8005:-8005}:8005"
+      - "${FRAPPE_PORT_9000:-9000}:9000"
+      - "${FRAPPE_PORT_9001:-9001}:9001"
+      - "${FRAPPE_PORT_9002:-9002}:9002"
+      - "${FRAPPE_PORT_9003:-9003}:9003"
+      - "${FRAPPE_PORT_9004:-9004}:9004"
+      - "${FRAPPE_PORT_9005:-9005}:9005"
+    depends_on:
+      mariadb:
+        condition: service_started
+      redis-cache:
+        condition: service_started
+      redis-queue:
+        condition: service_started
+    networks:
+      - frappe-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # PostgreSQL Database for SonarQube
+  sonarqube_db:
+    image: postgres:13
+    container_name: sonarqube_db
+    environment:
+      POSTGRES_USER: sonar
+      POSTGRES_PASSWORD: sonar
+      POSTGRES_DB: sonarqube
+    volumes:
+      - sonarqube_postgresql:/var/lib/postgresql/data
+    networks:
+      - frappe-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sonar"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # SonarQube
+  sonarqube:
+    image: sonarqube:9.9-community
+    container_name: sonarqube
+    depends_on:
+      sonarqube_db:
+        condition: service_healthy
+    environment:
+      SONAR_JDBC_URL: jdbc:postgresql://sonarqube_db:5432/sonarqube
+      SONAR_JDBC_USERNAME: sonar
+      SONAR_JDBC_PASSWORD: sonar
+    ports:
+      - "9999:9000"
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_logs:/opt/sonarqube/logs
+    networks:
+      - frappe-network
+    restart: unless-stopped
+
+networks:
+  frappe-network:
+    driver: bridge
+
+volumes:
+  mariadb-data:
+  sonarqube_data:
+  sonarqube_extensions:
+  sonarqube_logs:
+  sonarqube_postgresql:

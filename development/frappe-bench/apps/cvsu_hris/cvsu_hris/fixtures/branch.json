@@ -1,0 +1,93 @@
+[
+ {
+  "branch": "Rosario",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-05-13 08:16:26.688963",
+  "name": "Rosario"
+ },
+ {
+  "branch": "Bacoor",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.693615",
+  "name": "Bacoor"
+ },
+ {
+  "branch": "Carmona",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.743532",
+  "name": "Carmona"
+ },
+ {
+  "branch": "Cavite City",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.752267",
+  "name": "Cavite City"
+ },
+ {
+  "branch": "General Trias",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.757314",
+  "name": "General Trias"
+ },
+ {
+  "branch": "Imus",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.762322",
+  "name": "Imus"
+ },
+ {
+  "branch": "Maragondon",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.772296",
+  "name": "Maragondon"
+ },
+ {
+  "branch": "Naic",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.777332",
+  "name": "Naic"
+ },
+ {
+  "branch": "Silang",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.782232",
+  "name": "Silang"
+ },
+ {
+  "branch": "Tanza",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.787110",
+  "name": "Tanza"
+ },
+ {
+  "branch": "Trece Martires",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-05-06 11:06:06.049679",
+  "name": "Trece Martires"
+ },
+ {
+  "branch": "Dasmariñas",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.796953",
+  "name": "Dasmariñas"
+ },
+ {
+  "branch": "Main",
+  "docstatus": 0,
+  "doctype": "Branch",
+  "modified": "2024-02-26 11:57:54.767295",
+  "name": "Main"
+ }
+]

@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EMP-SCHED-.MM.-.YYYY.-.######",
+ "creation": "2025-11-13 09:10:21.534315",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "schedule_label",
+  "employee",
+  "employee_name",
+  "office",
+  "category",
+  "employment_status",
+  "from_date",
+  "end_date",
+  "detailed_schedule"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.custom_category",
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.custom_employment_status",
+   "fieldname": "employment_status",
+   "fieldtype": "Data",
+   "label": "Employment Status",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.custom_office",
+   "fieldname": "office",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Office",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date"
+  },
+  {
+   "fieldname": "schedule_label",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Schedule Label",
+   "options": "Schedule Label",
+   "reqd": 1
+  },
+  {
+   "fieldname": "detailed_schedule",
+   "fieldtype": "Table",
+   "label": "Detailed Schedule",
+   "options": "Detailed Schedule",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-09 09:17:09.566408",
+ "modified_by": "Administrator",
+ "module": "CvSU HRIS",
+ "name": "Employee Schedule",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

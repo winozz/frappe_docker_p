@@ -1,0 +1,217 @@
+# CvSU AIS - Complete Development Environment
+# Cavite State University Accounting Information System (AMS)
+# Based on Frappe Framework v15 with ERPNext
+# Custom Apps: cvsu_hris, ams (accounting)
+# Last Updated: February 9, 2026
+
+version: "3.8"
+
+services:
+  # MariaDB 11.8 - Primary Database
+  mariadb:
+    image: mariadb:11.8
+    container_name: cvsu_ais_mariadb
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --skip-character-set-client-handshake
+      - --skip-innodb-read-only-compressed
+      - --max-allowed-packet=64M
+      - --innodb-buffer-pool-size=512M
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-123}
+      MARIADB_AUTO_UPGRADE: 1
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    networks:
+      - ais-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # Redis Cache - Session and cache storage
+  redis-cache:
+    image: redis:alpine
+    container_name: cvsu_ais_redis_cache
+    volumes:
+      - redis-cache-data:/data
+    networks:
+      - ais-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+  # Redis Queue - Background job queue
+  redis-queue:
+    image: redis:alpine
+    container_name: cvsu_ais_redis_queue
+    volumes:
+      - redis-queue-data:/data
+    networks:
+      - ais-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+
+  # Frappe Bench - Main Application Container
+  frappe:
+    image: frappe/bench:latest
+    container_name: cvsu_ais_frappe
+    user: "0:0"  # Run as root for initial setup
+    command: 
+      - /bin/bash
+      - -c
+      - |
+        set -e
+        echo "╔════════════════════════════════════════════════════════╗"
+        echo "║  CvSU AMS Development Environment Ready!              ║"
+        echo "╠════════════════════════════════════════════════════════╣"
+        echo "║  Run the following commands to set up Frappe:         ║"
+        echo "║                                                        ║"
+        echo "║  1. docker exec -it cvsu_ais_frappe bash              ║"
+        echo "║  2. bash /workspace/development/init-frappe.sh         ║"
+        echo "║  3. cd frappe-bench && bench start                     ║"
+        echo "╚════════════════════════════════════════════════════════╝"
+        tail -f /dev/null
+    
+    environment:
+      - SHELL=/bin/bash
+      - PYTHONUNBUFFERED=1
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
+    volumes:
+      - ..:/workspace:cached
+      # SSH keys for git (if needed)
+      # - ${HOME}/.ssh:/home/frappe/.ssh:ro
+    working_dir: /workspace/development
+    ports:
+      # Frappe web servers (sites)
+      - "8000:8000"   # Site 1
+      - "8001:8001"   # Site 2
+      - "8002:8002"   # Site 3
+      - "8003:8003"   # Site 4
+      - "8004:8004"   # Site 5
+      - "8005:8005"   # Site 6
+      # SocketIO servers
+      - "9000:9000"   # SocketIO 1
+      - "9001:9001"   # SocketIO 2
+      - "9002:9002"   # SocketIO 3
+      - "9003:9003"   # SocketIO 4
+      - "9004:9004"   # SocketIO 5
+      - "9005:9005"   # SocketIO 6
+      # VSCode debugger
+      - "6787:6787"
+    depends_on:
+      mariadb:
+        condition: service_healthy
+      redis-cache:
+        condition: service_healthy
+      redis-queue:
+        condition: service_healthy
+    networks:
+      - ais-network
+    restart: unless-stopped
+
+  # PostgreSQL for SonarQube
+  sonarqube_db:
+    image: postgres:13
+    container_name: cvsu_ais_sonarqube_db
+    environment:
+      POSTGRES_USER: sonar
+      POSTGRES_PASSWORD: sonar
+      POSTGRES_DB: sonarqube
+    volumes:
+      - sonarqube_postgresql:/var/lib/postgresql/data
+    networks:
+      - ais-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sonar"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # SonarQube - Code Quality & Security Analysis
+  sonarqube:
+    image: sonarqube:9.9-community
+    container_name: cvsu_ais_sonarqube
+    depends_on:
+      sonarqube_db:
+        condition: service_healthy
+    environment:
+      SONAR_JDBC_URL: jdbc:postgresql://sonarqube_db:5432/sonarqube
+      SONAR_JDBC_USERNAME: sonar
+      SONAR_JDBC_PASSWORD: sonar
+      SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: "true"
+    ports:
+      - "9999:9000"  # Port 9000 is used by SocketIO
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_logs:/opt/sonarqube/logs
+    networks:
+      - ais-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:9000/api/system/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+networks:
+  ais-network:
+    name: cvsu_ais_network
+    driver: bridge
+
+volumes:
+  mariadb-data:
+    name: cvsu_ais_mariadb_data
+  redis-cache-data:
+    name: cvsu_ais_redis_cache
+  redis-queue-data:
+    name: cvsu_ais_redis_queue
+  sonarqube_data:
+    name: cvsu_ais_sonarqube_data
+  sonarqube_extensions:
+    name: cvsu_ais_sonarqube_extensions
+  sonarqube_logs:
+    name: cvsu_ais_sonarqube_logs
+  sonarqube_postgresql:
+    name: cvsu_ais_sonarqube_postgresql
+
+# Usage Instructions:
+# 
+# 1. Start all services:
+#    docker compose -f .devcontainer/docker-compose.cvsu-ais.yml up -d
+#
+# 2. View logs:
+#    docker compose -f .devcontainer/docker-compose.cvsu-ais.yml logs -f frappe
+#
+# 3. Enter Frappe container:
+#    docker exec -it cvsu_ais_frappe bash
+#
+# 4. Start Frappe (inside container):
+#    cd /workspace/development/frappe-bench
+#    bench start
+#
+# 5. Run tests:
+#    bench --site cvsu-ais.localhost run-tests --app ais
+#
+# 6. Stop all services:
+#    docker compose -f .devcontainer/docker-compose.cvsu-ais.yml down
+#
+# 7. Remove all data (reset):
+#    docker compose -f .devcontainer/docker-compose.cvsu-ais.yml down -v

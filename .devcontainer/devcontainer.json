@@ -1,0 +1,111 @@
+{
+  "name": "CvSU AMS - Frappe Development (Accounting)",
+  "forwardPorts": [8000, 8001, 8002, 8003, 8004, 8005, 9000, 9001, 9999, 3307, 6787],
+  "remoteUser": "frappe",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.debugpy",
+        "SonarSource.sonarlint-vscode",
+        "ms-vscode.live-server",
+        "grapecity.gc-excelviewer",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-mysql",
+        "visualstudioexptteam.vscodeintellicode",
+        "eamodio.gitlens",
+        "GitHub.copilot",
+        "donjayamanne.python-extension-pack",
+        "ms-toolsai.jupyter"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/home/frappe/.pyenv/versions/3.11.9/bin/python",
+        "python.analysis.typeCheckingMode": "basic",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": false,
+        "python.linting.flake8Enabled": true,
+        "python.formatting.provider": "black",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+        },
+        "files.exclude": {
+          "**/__pycache__": true,
+          "**/*.pyc": true
+        },
+        "terminal.integrated.profiles.linux": {
+          "frappe bash": {
+            "path": "/bin/bash",
+            "args": ["-c", "cd /workspace/development/frappe-bench 2>/dev/null || cd /workspace/development; exec bash"]
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "frappe bash",
+        "debug.node.autoAttach": "disabled",
+        "sqltools.connections": [
+          {
+            "mysqlOptions": {
+              "authProtocol": "default",
+              "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "mariadb",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "MariaDB - Root",
+            "username": "root",
+            "password": "123",
+            "database": "mysql"
+          },
+          {
+            "mysqlOptions": {
+              "authProtocol": "default",
+              "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "mariadb",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "Accounting Site DB",
+            "username": "root",
+            "password": "123",
+            "database": "accounting_localhost"
+          }
+        ]
+      }
+    }
+  },
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "frappe",
+  "workspaceFolder": "/workspace/development",
+  "shutdownAction": "stopCompose",
+  "portsAttributes": {
+    "8000": {
+      "label": "Frappe - accounting.localhost",
+      "onAutoForward": "notify"
+    },
+    "8001": {
+      "label": "Frappe - Site 2"
+    },
+    "9000": {
+      "label": "SocketIO"
+    },
+    "9999": {
+      "label": "SonarQube",
+      "onAutoForward": "ignore"
+    },
+    "3307": {
+      "label": "MariaDB"
+    },
+    "6787": {
+      "label": "Python Debugger"
+    }
+  },
+  "postCreateCommand": "echo '\n✅ CvSU AMS Dev Container Ready!\n   Python: $(python --version 2>&1)\n   Bench: $(bench --version 2>&1 || echo \"Not installed yet\")\n   Site: accounting.localhost\n   Admin: Administrator / admin\n\n📚 Quick Start:\n   1. bash /workspace/development/setup-container.sh\n   2. cd frappe-bench && bench start\n   3. Open http://localhost:8000\n'",
+  "postAttachCommand": "echo '\n📦 Frappe Dev Environment\n   - Frappe: http://localhost:8000\n   - SonarQube: http://localhost:9000\n   - To start: cd frappe-bench && bench start\n'",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  }
+}
